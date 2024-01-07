@@ -23,6 +23,21 @@ body {
   background: var(--background-color);
 }
 
+@media(max-width: 768px) {
+
+  .cursor,
+  .navbar-container,
+  .cursor-outer {
+    display: none;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .navbar-item {
+    display: none;
+  }
+}
+
 .cursor {
   transition: all 0.01s ease-out;
   width: 10px;
