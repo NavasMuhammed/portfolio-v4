@@ -1,10 +1,11 @@
+import Home from "./home";
 import MainLayout from "./layouts/mainLayout";
 
-export default function Home() {
+export default function Index() {
   return (
     <main>
       <MainLayout>
-        <h1>Home</h1>
+        <Home />
       </MainLayout>
     </main>
   )

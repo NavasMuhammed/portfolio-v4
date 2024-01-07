@@ -2,14 +2,15 @@ import React, { ReactNode } from 'react';
 import NavBar from '../components/navbar/navbar';
 
 interface MainLayoutProps {
-    children: ReactNode;
+    children: ReactNode
 }
+
 
 const MainLayout = ({ children }: MainLayoutProps) => {
     return (
         <main>
             <NavBar />
-            <section>{children}</section>
+            <section className='pt-36 px-100' >{children}</section>
         </main>
     );
 };
