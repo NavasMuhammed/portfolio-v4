@@ -6,7 +6,7 @@ import SkillCard from '@components/cards/skillCard'
 const Home = () => {
     return (
         <section className='banner'>
-            <div className="banner-container flex gap-28 justify-between">
+            <div className="banner-container flex gap-28 justify-between max-[600px]:flex-col">
                 <PorfileCard />
                 <HeroBanner />
                 <SkillCard />
