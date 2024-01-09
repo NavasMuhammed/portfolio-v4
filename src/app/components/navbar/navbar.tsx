@@ -32,13 +32,13 @@ const NavBar = () => {
 
     return (
         <nav className="navbar-container fixed w-full flex px-100 justify-between items-center">
-            <div className="navbar-logo  py-12 ">NAVAS</div>
+            <div className="navbar-logo  py-12 ">LOGO</div>
             <div className="navbar-items flex flex-1 justify-center ">
                 {navItems.map((item, index) => (
-                    <div key={index} onClick={() => handleRouteClick(item.link)} className="navbar-item p-12 py-12">{item.name}</div>
+                    <div key={index} onClick={() => handleRouteClick(item.link)} className="navbar-item p-10 py-12">{item.name}</div>
                 ))}
             </div>
-            <div className="navbar-menu p-12 py-12">menu</div>
+            <div className="navbar-menu  py-12">Menu</div>
 
         </nav>
     )
