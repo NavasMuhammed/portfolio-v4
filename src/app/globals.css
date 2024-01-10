@@ -22,6 +22,7 @@
   --senary-color: #949494;
   --septenary-color: #d9d9d9;
   --octonary-color: #414141;
+  --hr--color: #262626;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -44,11 +45,49 @@ body {
   .cursor-outer {
     display: none;
   }
+
+  .banner-container {
+    display: flex !important;
+    flex-direction: column;
+  }
+
+  .skill-card-container {
+    order: 1;
+  }
+
+
+
+  .hero-banner-container {
+    order: 3;
+  }
 }
 
 @media (max-width: 1199.98px) {
   .navbar-item {
     display: none;
+  }
+
+  .profile-card-container {
+    position: relative;
+  }
+
+  .banner-container {
+    display: grid;
+    grid-template-areas:
+      "profile skill"
+      "hero hero";
+  }
+
+  .profile-card-container {
+    grid-area: profile;
+  }
+
+  .hero-banner-container {
+    grid-area: hero;
+  }
+
+  .skill-card-container {
+    grid-area: skill;
   }
 }
 
@@ -77,6 +116,29 @@ body {
   border: 1px solid #242424;
 }
 
+.hero-card-container {
+  background-image: linear-gradient(180deg, #262626, rgba(38, 38, 38, .1));
+  padding: 40px;
+  border: 1px solid #242424;
+}
+
 .text-quaternary {
   color: var(--quaternary-color) !important;
+}
+
+.hr-style {
+  background: var(--hr--color);
+  border: 0;
+  height: 1px;
+}
+
+.button-primary {
+  justify-content: space-between;
+  border: 1px solid #242424;
+
+}
+
+.fancy-hover:hover {
+  transition: all 0.25s ease;
+  border: 1px solid var(--theme-color);
 }

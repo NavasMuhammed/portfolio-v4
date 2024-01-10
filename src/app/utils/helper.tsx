@@ -1,4 +1,5 @@
 import Image from "next/image"; // Import the 'Image' component correctly.
+import { ReactNode } from "react";
 
 /**
  * Renders a placeholder image with the specified dimensions.
@@ -17,4 +18,21 @@ export const PlaceholderImage = ({ x, y = x, className }: PlaceholderImageProps)
     return (
         <Image src={`https://via.placeholder.com/${x}x${y}`} width={x} height={y} alt='profile image' className={`${className}`} />
     );
+}
+
+interface ButtonProdiverProps {
+    title?: string;
+    icon?: ReactNode;
+    className?: string;
+}
+
+const iconPlaceHolder = <div>⚡</div>
+
+export const ButtonProdiver = ({ title = "button", icon = iconPlaceHolder, className = '' }: ButtonProdiverProps) => {
+    return (
+        <div className={`button-primary flex flex-row gap-3 ${className}`}>
+            <button className='font-normal leading-7  '>{title}</button>
+            <button className='btn-secondary'>{icon}</button>
+        </div>
+    )
 }
