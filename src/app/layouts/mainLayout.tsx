@@ -33,7 +33,7 @@ const MainLayout = ({ children }: MainLayoutProps) => {
     return (
         <main>
             <NavBar />
-            <section className='pt-36 px-100 max-[600px]:p-10 max-[600px]:w-max max-[600px]:m-auto'>{children}</section>
+            <section className='pt-40 px-4 lg:pt-36 lg:px-100 '>{children}</section>
             <div className='cursor fixed rounded-lg top-0 left-0 right-0 bottom-0' ></div>
             <div className='cursor-outer fixed  top-0 left-0 right-0 bottom-0' ></div>
         </main>

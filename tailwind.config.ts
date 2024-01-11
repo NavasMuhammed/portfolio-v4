@@ -11,6 +11,9 @@ const config: Config = {
       spacing: {
         '100': '78px',
       },
+      colors: {
+        'progress-bg':'#242424'
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
