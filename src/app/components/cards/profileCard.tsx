@@ -18,7 +18,7 @@ const PorfileCard = ({ name = "Andrea E. Harper", work = 'Theme Designer at Enva
         <div className='flex flex-col gap-6'>
             <div className="profile-card-container h-max  p-5 rounded-3xl border bg-transparent border-gray-500 sticky ">
                 <PlaceholderImage x={230} className='rounded-3xl mb-4 w-full' />
-                <div className="profile-title">
+                <div className="profile-title lg:w-max w-full">
                     <span className="text-xl font-bold text-white-700 leading-8 whitespace-nowrap">{name}</span>
                     <div className='flex flex-col gap-2 mt-3'>
                         <span className='flex gap-2 items-center'>
