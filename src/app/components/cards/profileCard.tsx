@@ -7,7 +7,7 @@ interface PorfileCardProps {
     loc?: string;
 }
 
-const PorfileCard = ({ name = "Andrea E. Harper", work = 'Theme Designer at Envato', loc = "Lives in New York, USA" }: PorfileCardProps) => {
+const PorfileCard = ({ name = "Name Here ", work = 'Theme Designer at Envato', loc = "Lives in New York, USA" }: PorfileCardProps) => {
     const icons = [
         <PlaceholderImage key={1} x={40} className='rounded-full' />,
         <PlaceholderImage key={2} x={40} className='rounded-full' />,
@@ -15,8 +15,8 @@ const PorfileCard = ({ name = "Andrea E. Harper", work = 'Theme Designer at Enva
         <PlaceholderImage key={4} x={40} className='rounded-full' />,
     ]
     return (
-        <div className='flex flex-col gap-6'>
-            <div className="profile-card-container h-max  p-5 rounded-3xl border bg-transparent border-gray-500 sticky ">
+        <div className='profile-card-container h-fit flex flex-col gap-6   xl:sticky xl:top-40 '>
+            <div className="profile-card-wrapper h-max  p-5 rounded-3xl border bg-transparent border-gray-500  ">
                 <PlaceholderImage x={230} className='rounded-3xl mb-4 w-full' />
                 <div className="profile-title lg:w-max w-full">
                     <span className="text-xl font-bold text-white-700 leading-8 whitespace-nowrap">{name}</span>
@@ -40,7 +40,7 @@ const PorfileCard = ({ name = "Andrea E. Harper", work = 'Theme Designer at Enva
                     </div>
                 </div>
             </div>
-            <ButtonProdiver title='Follow' className='self-center ml-auto fancy-hover w-full rounded-3xl p-5 ' />
+            <ButtonProdiver title='Follow' className='self-center ml-auto fancy-hover w-full rounded-3xl p-5' />
             <ButtonProdiver title='Follow' className='self-center ml-auto fancy-hover w-full rounded-3xl p-5' />
         </div>
     )

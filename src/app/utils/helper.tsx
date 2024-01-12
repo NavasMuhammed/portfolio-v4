@@ -31,7 +31,7 @@ const iconPlaceHolder = <div>⚡</div>
 export const ButtonProdiver = ({ title = "button", icon = iconPlaceHolder, className = '' }: ButtonProdiverProps) => {
     return (
         <div className={`button-primary flex flex-row gap-3 ${className}`}>
-            <button className='font-normal leading-7  '>{title}</button>
+            <button className='font-normal   '>{title}</button>
             <button className='btn-secondary'>{icon}</button>
         </div>
     )

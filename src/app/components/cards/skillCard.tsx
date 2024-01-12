@@ -3,8 +3,8 @@ import ProgressComponent from '../progressComponent'
 
 const SkillCard = () => {
     return (
-        <div className="skill-card-container  w-full h-max rounded-3xl  p-5 lg:p-8">
-            <div className="skill-card-title font-semibold text-2xl ">My Specialization</div>
+        <div className="skill-card-container relative xl:sticky xl:top-40 w-full h-max rounded-3xl  p-5 xl:p-8">
+            <div className="skill-card-title font-semibold text-2xl ">Top Skills</div>
             <div className="flex flex-col mt-5 gap-6">
                 <ProgressComponent title='JavaScript' duration={2000} progress={80} classNameProgress='yellow-gradient' />
                 <ProgressComponent title='NodeJs' duration={2000} progress={75} classNameProgress='purple-gradient' />
