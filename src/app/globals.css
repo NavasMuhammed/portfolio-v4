@@ -55,17 +55,17 @@ body {
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(10%);
+    scale: 0.9;
   }
 
   to {
+    scale: 1;
     opacity: 1;
-    transform: translateY(0);
   }
 }
 
 .animate-fadeInUp {
-  animation: fadeInUp 1s ease;
+  animation: fadeInUp 1.5s ease;
 }
 
 .invisible {
