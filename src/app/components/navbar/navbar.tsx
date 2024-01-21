@@ -47,7 +47,7 @@ const NavBar = () => {
             </div>
             <div className="settings-container ">
                 <SvgIconProdiver name="gear" color="#fff" size={48} onClick={handleMenuClick} />
-                <div className='settings-grid  rounded-3xl p-5 right-16 xl:right-24'>
+                <div className='settings-modal  rounded-3xl p-5 right-16 xl:right-24'>
                     <SettingsPanel />
                 </div>
             </div>
