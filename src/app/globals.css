@@ -109,7 +109,6 @@ body {
 
 
   .cursor,
-  .navbar-container,
   .cursor-outer,
   .settings-panel {
     display: none;
@@ -129,9 +128,36 @@ body {
   .hero-banner-container {
     order: 3;
   }
+
+
+  .settings-modal {
+    transition: all 0.5s ease-in-out;
+    height: 0;
+    width: 100% !important;
+    opacity: 0;
+    position: absolute;
+    border-radius: 0;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(180deg, #262626, rgba(38, 38, 38, 1));
+  }
+
+  .settings-open .settings-modal {
+    display: block;
+    position: absolute;
+    width: 100% !important;
+    height: 100vh !important;
+    opacity: 1;
+  }
+
+  .gear-svg {
+    position: relative;
+    z-index: 9999;
+  }
+
 }
 
-.settings-grid {
+.settings-modal {
   transition: all 0.5s ease-in-out;
   height: 0;
   width: 300px;
@@ -149,12 +175,12 @@ body {
     display: none;
   }
 
-  .settings-open .settings-grid .settings-panel {
+  .settings-open .settings-modal .settings-panel {
     display: block;
     position: relative;
   }
 
-  .settings-open .settings-grid {
+  .settings-open .settings-modal {
     display: block;
     position: absolute;
     width: 300px;
@@ -301,7 +327,7 @@ body {
 
 
 @media (min-width:1199.98px) {
-  .settings-grid {
+  .settings-modal {
     display: none;
   }
 
