@@ -1,6 +1,7 @@
 'use client'
 import { useRouter } from 'next/navigation'
 import React from 'react'
+import { SvgIconProdiver } from '@/app/utils/helper'
 
 const NavBar = () => {
     const router = useRouter()
@@ -29,6 +30,11 @@ const NavBar = () => {
     const handleRouteClick = (link: string) => {
         router.push(link)
     }
+    const handleMenuClick = () => {
+        //add a class to the body to show the menu
+        document.body.classList.toggle('settings-open')
+        //close menu when clicking out side of it 
+    }
 
     return (
         <nav className="navbar-container fixed w-full flex px-100 justify-between items-center">
@@ -38,8 +44,9 @@ const NavBar = () => {
                     <div key={index} onClick={() => handleRouteClick(item.link)} className="navbar-item p-10 py-12">{item.name}</div>
                 ))}
             </div>
-            <div className="navbar-menu  py-12">Menu</div>
-
+            <div className="settings-container">
+                <SvgIconProdiver name="gear" color="#fff" size={48} onClick={handleMenuClick} />
+            </div>
         </nav>
     )
 }

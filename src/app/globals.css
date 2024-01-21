@@ -96,7 +96,8 @@ body {
 
   .cursor,
   .navbar-container,
-  .cursor-outer {
+  .cursor-outer,
+  .settings-panel {
     display: none;
   }
 
@@ -252,4 +253,53 @@ body {
 
 .dark-gradient-purple {
   background-image: linear-gradient(90deg, #4b6cb7, #182848);
+}
+
+
+
+
+
+
+@media (min-width:667px) {
+
+  .settings-panel {
+    width: 300px;
+    background: var(--theme-bg);
+    border: 1px solid var(--border-dark);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 100%;
+    right: -300px;
+  }
+
+  .settings-open .settings-panel {
+    display: block;
+
+  }
+
+  /* .settings-open .cursor,
+  .settings-open .cursor-outer {
+    display: none;
+  } */
+
+  body {
+    position: relative;
+    transition: left 0.5s ease-in-out;
+    left: 0;
+    overflow-x: hidden;
+  }
+
+  body.settings-open {
+    left: -300px;
+  }
+
+  .settings-container {
+    transition: all 0.5s ease-in-out;
+    transform: rotate(0deg);
+  }
+
+  .settings-open .settings-container {
+    transform: rotate(180deg);
+  }
+
 }

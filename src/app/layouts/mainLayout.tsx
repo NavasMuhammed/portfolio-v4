@@ -1,6 +1,7 @@
 'use client'
-import React, { ReactNode, useEffect } from 'react';
+import { ReactNode, useEffect } from 'react';
 import NavBar from '../components/navbar/navbar';
+import SettingsPanel from '../components/settingsPanel';
 
 interface MainLayoutProps {
     children: ReactNode;
@@ -31,11 +32,13 @@ const MainLayout = ({ children }: MainLayoutProps) => {
     }, []);
 
     return (
-        <main>
+        <main className='main-layout'>
             <NavBar />
             <section className='pt-40 px-4 lg:pt-36 lg:px-100 '>{children}</section>
+            <SettingsPanel />
             <div className='cursor fixed rounded-lg top-0 left-0 right-0 bottom-0' ></div>
             <div className='cursor-outer fixed  top-0 left-0 right-0 bottom-0' ></div>
+
         </main>
     );
 };

@@ -1,5 +1,6 @@
 import Image from "next/image"; // Import the 'Image' component correctly.
 import { ReactNode } from "react";
+import { DefaultIcon, GearIcon } from "./constants";
 
 /**
  * Renders a placeholder image with the specified dimensions.
@@ -35,4 +36,26 @@ export const ButtonProdiver = ({ title = "button", icon = iconPlaceHolder, class
             <button className='btn-secondary'>{icon}</button>
         </div>
     )
+}
+
+interface SvgIconProdiver {
+    name?: string;
+    color?: string;
+    size?: number;
+    onClick?: () => void;
+}
+
+export const SvgIconProdiver = ({ name, color = 'white', size = 24, onClick }: SvgIconProdiver) => {
+    switch (name) {
+        case 'gear':
+            return (
+                <GearIcon color={color} size={size} onClick={onClick} />
+            )
+
+        default:
+            return (
+                <DefaultIcon color={color} size={size} onClick={onClick} />
+            )
+
+    }
 }
