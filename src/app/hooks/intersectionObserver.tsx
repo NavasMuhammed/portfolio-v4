@@ -9,7 +9,7 @@ type UseIntersectionObserverProps = {
     threshold: number;
 };
 
-const useIntersectionObserver = ({
+export const useIntersectionObserver = ({
     elementSelector,
     classes,
     threshold,
@@ -23,9 +23,6 @@ const useIntersectionObserver = ({
                     if (entry.isIntersecting) {
                         entry.target.classList.add(classes.add);
                         entry.target.classList.remove(classes.remove);
-                        console.log('Element is in the viewport!');
-                    } else {
-                        console.log('Element is not in the viewport.');
                     }
                 });
             },
@@ -40,5 +37,3 @@ const useIntersectionObserver = ({
         });
     }, [elementSelector, classes.add, classes.remove, threshold]);
 };
-
-export default useIntersectionObserver;
