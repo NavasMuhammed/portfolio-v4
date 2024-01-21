@@ -43,13 +43,14 @@ interface SvgIconProdiver {
     color?: string;
     size?: number;
     onClick?: () => void;
+    className?: string;
 }
 
 export const SvgIconProdiver = ({ name, color = 'white', size = 24, onClick }: SvgIconProdiver) => {
     switch (name) {
         case 'gear':
             return (
-                <GearIcon color={color} size={size} onClick={onClick} />
+                <GearIcon className="gear-svg" color={color} size={size} onClick={onClick} />
             )
 
         default:

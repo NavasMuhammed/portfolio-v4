@@ -92,7 +92,21 @@ body {
   background: var(--tertiary-color);
 }
 
+
+
+.settings-panel {
+  padding: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.settings-open .settings-panel {
+
+  padding: 0rem 1rem;
+
+}
+
 @media(max-width: 668px) {
+
 
   .cursor,
   .navbar-container,
@@ -117,9 +131,35 @@ body {
   }
 }
 
+.settings-grid {
+  transition: all 0.5s ease-in-out;
+  height: 0;
+  width: 300px;
+  opacity: 0;
+  position: absolute;
+  background-image: linear-gradient(180deg, #262626, rgba(38, 38, 38, 1));
+}
+
 @media (max-width: 1199.98px) {
   .navbar-item {
     display: none;
+  }
+
+  .settings-panel {
+    display: none;
+  }
+
+  .settings-open .settings-grid .settings-panel {
+    display: block;
+    position: relative;
+  }
+
+  .settings-open .settings-grid {
+    display: block;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    opacity: 1;
   }
 
   .profile-card-wrapper {
@@ -260,13 +300,15 @@ body {
 
 
 
-@media (min-width:667px) {
+@media (min-width:1199.98px) {
+  .settings-grid {
+    display: none;
+  }
 
   .settings-panel {
     width: 300px;
     background: var(--theme-bg);
     border: 1px solid var(--border-dark);
-    border-radius: 5px;
     margin-bottom: 10px;
     height: 100%;
     right: -300px;
@@ -293,13 +335,14 @@ body {
     left: -300px;
   }
 
-  .settings-container {
-    transition: all 0.5s ease-in-out;
-    transform: rotate(0deg);
-  }
 
-  .settings-open .settings-container {
-    transform: rotate(180deg);
-  }
+}
 
+.gear-svg {
+  transition: all 0.5s ease-in-out;
+  transform: rotate(180deg);
+}
+
+.settings-open .gear-svg {
+  transform: rotate(0deg);
 }
