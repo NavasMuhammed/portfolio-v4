@@ -1,7 +1,7 @@
 'use client'
 import { ReactNode, useEffect } from 'react';
 import NavBar from '../components/navbar/navbar';
-import SettingsPanel from '../components/settingsPanel';
+import SettingsPanel from '../components/settings/settingsPanel';
 
 interface MainLayoutProps {
     children: ReactNode;

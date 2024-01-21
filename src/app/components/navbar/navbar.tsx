@@ -2,7 +2,7 @@
 import { useRouter } from 'next/navigation'
 import React from 'react'
 import { SvgIconProdiver } from '@/app/utils/helper'
-import SettingsPanel from '../settingsPanel'
+import SettingsPanel from '../settings/settingsPanel'
 
 const NavBar = () => {
     const router = useRouter()
@@ -46,7 +46,7 @@ const NavBar = () => {
                 ))}
             </div>
             <div className="settings-container ">
-                <SvgIconProdiver name="gear" color="#fff" size={48} onClick={handleMenuClick} />
+                <SvgIconProdiver name="gear" size={48} onClick={handleMenuClick} />
                 <div className='settings-modal  rounded-3xl p-5 right-16 xl:right-24'>
                     <SettingsPanel />
                 </div>

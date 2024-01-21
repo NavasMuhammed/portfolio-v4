@@ -46,7 +46,7 @@ interface SvgIconProdiver {
     className?: string;
 }
 
-export const SvgIconProdiver = ({ name, color = 'white', size = 24, onClick }: SvgIconProdiver) => {
+export const SvgIconProdiver = ({ name, color = '', size = 24, onClick }: SvgIconProdiver) => {
     switch (name) {
         case 'gear':
             return (

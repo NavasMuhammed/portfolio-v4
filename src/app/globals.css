@@ -3,17 +3,21 @@
 @tailwind utilities;
 
 :root {
+  /* main acsent color */
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  /* background color */
   --background-color: #0f0f0f;
-  --black: #000000;
-  --cursor-color: #ffffff;
-  --cursor-color-outer: #ffffff;
-  --theme-bg: #0f0f0f;
-  --theme-color: #fff;
-  --white: #fff;
-  --black: #000;
+
+  --dark-card-shade: #262626;
+  --dark-card-shade-end: #2626261a;
+
+  /* card shade */
+  --profile-card-dark: linear-gradient(180deg, var(--dark-card-shade), var(--dark-card-shade-end));
+  --skill-card-dark: linear-gradient(140deg, var(--dark-card-shade), var(--dark-card-shade-end));
+  --hero-card-dark: linear-gradient(120deg, var(--dark-card-shade), var(--dark-card-shade-end));
+  --settings-modal-bg: linear-gradient(180deg, var(--dark-card-shade), var(--dark-card-shade));
+
+  /* color palletes */
   --primary-color: #151515;
   --secondary-color: #1b1b1b;
   --tertiary-color: #181818;
@@ -22,9 +26,28 @@
   --senary-color: #949494;
   --septenary-color: #d9d9d9;
   --octonary-color: #414141;
+
+  /* cursor colors */
+  --cursor-color-outer: #ffffff;
+  --cursor-color: #ffffff;
+
+  /* horizontal divider color */
   --hr--color: #262626;
+
+  /* icons */
+  --gear-icon: #ffffff;
+
+  --theme-bg: #0f0f0f;
+  --theme-color: #fff;
   --border-dark: #242424;
   --progress-bg: #242424;
+
+  --white: #fff;
+
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --black: #000000;
+  --black: #000;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -139,7 +162,7 @@ body {
     border-radius: 0;
     left: 0;
     top: 0;
-    background-image: linear-gradient(180deg, #262626, rgba(38, 38, 38, 1));
+    background-image: var(--settings-modal-bg);
   }
 
   .settings-open .settings-modal {
@@ -163,7 +186,7 @@ body {
   width: 300px;
   opacity: 0;
   position: absolute;
-  background-image: linear-gradient(180deg, #262626, rgba(38, 38, 38, 1));
+  background-image: var(--settings-modal-bg);
 }
 
 @media (max-width: 1199.98px) {
@@ -186,6 +209,8 @@ body {
     width: 300px;
     height: 300px;
     opacity: 1;
+    border: 1px solid var(--border-dark);
+
   }
 
   .profile-card-wrapper {
@@ -233,19 +258,19 @@ body {
 
 
 .profile-card-wrapper {
-  background-image: linear-gradient(180deg, #262626, rgba(38, 38, 38, .1));
+  background-image: var(--profile-card-dark);
   padding: 20px;
   border: 1px solid var(--border-dark);
 }
 
 .skill-card-container {
-  background-image: linear-gradient(140deg, #262626, rgba(38, 38, 38, .1));
+  background-image: var(--skill-card-dark);
   border: 1px solid var(--border-dark);
 
 }
 
 .hero-card-container {
-  background-image: linear-gradient(120deg, #262626, rgba(38, 38, 38, .1));
+  background-image: var(--hero-card-dark);
   border: 1px solid var(--border-dark);
 }
 
@@ -271,7 +296,6 @@ body {
 }
 
 .skill-card-title {
-  color: var(--theme-color);
   position: relative;
 }
 
@@ -333,7 +357,7 @@ body {
 
   .settings-panel {
     width: 300px;
-    background: var(--theme-bg);
+    background: var(--background-color);
     border: 1px solid var(--border-dark);
     margin-bottom: 10px;
     height: 100%;
@@ -367,6 +391,7 @@ body {
 .gear-svg {
   transition: all 0.5s ease-in-out;
   transform: rotate(180deg);
+  fill: var(--gear-icon);
 }
 
 .settings-open .gear-svg {
