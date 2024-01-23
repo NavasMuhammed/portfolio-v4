@@ -1,3 +1,4 @@
+'use client'
 
 type Theme = 'light' | 'dark';
 type ThemeProperties = {
@@ -14,7 +15,6 @@ type Props = {}
 
 export const ThemeSettings = (props: Props) => {
 
-    const root = document.querySelector(':root') as HTMLElement;
 
     const themeProvider = {
         light: {
@@ -38,6 +38,7 @@ export const ThemeSettings = (props: Props) => {
     }
 
     const handleClick = (theme: Theme) => {
+        const root = document.querySelector(':root') as HTMLElement;
         const themeProperties = themeProvider[theme];
         for (let property in themeProperties) {
             root.style.setProperty(property, themeProperties[property as keyof ThemeProperties]);
