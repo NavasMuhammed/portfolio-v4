@@ -4,7 +4,7 @@
 
 :root {
   /* main acsent color */
-  --foreground-rgb: 0, 0, 0;
+  --foreground-color: #ffffff;
   /* background color */
   --background-color: #0f0f0f;
 
@@ -60,7 +60,7 @@
 
 body {
   animation: reveal 1s ease-in-out;
-  color: rgb(var(--foreground-rgb));
+  color: var(--foreground-color);
   background: var(--background-color);
 }
 
