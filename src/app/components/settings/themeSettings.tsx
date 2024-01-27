@@ -34,6 +34,60 @@ export const ThemeSettings = (props: Props) => {
             '--gear-icon': '#ffffff',
             '--theme-bg': '#0f0f0f',
             '--border-dark': '#242424'
+        },
+        dracula: {
+            '--foreground-color': '#f8f8f2',
+            '--background-color': '#282a36',
+            '--dark-card-shade': '#44475a',
+            '--dark-card-shade-end': '#282a36',
+            '--gear-icon': '#f8f8f2',
+            '--theme-bg': '#282a36',
+            '--border-dark': '#44475a'
+        },
+        solarizedDark: {
+            '--foreground-color': '#839496',
+            '--background-color': '#002b36',
+            '--dark-card-shade': '#073642',
+            '--dark-card-shade-end': '#002b36',
+            '--gear-icon': '#839496',
+            '--theme-bg': '#002b36',
+            '--border-dark': '#073642'
+        },
+        nord: {
+            '--foreground-color': '#d8dee9',
+            '--background-color': '#2e3440',
+            '--dark-card-shade': '#4c566a',
+            '--dark-card-shade-end': '#2e3440',
+            '--gear-icon': '#d8dee9',
+            '--theme-bg': '#3b4252',
+            '--border-dark': '#4c566a'
+        },
+        materialDark: {
+            '--foreground-color': '#ffffff',
+            '--background-color': '#121212',
+            '--dark-card-shade': '#1e1e1e',
+            '--dark-card-shade-end': '#121212',
+            '--gear-icon': '#ffffff',
+            '--theme-bg': '#121212',
+            '--border-dark': '#1e1e1e'
+        },
+        oceanicNext: {
+            '--foreground-color': '#c0c5ce',
+            '--background-color': '#1b2b34',
+            '--dark-card-shade': '#343d46',
+            '--dark-card-shade-end': '#1b2b34',
+            '--gear-icon': '#c0c5ce',
+            '--theme-bg': '#1b2b34',
+            '--border-dark': '#343d46'
+        },
+        monokai: {
+            '--foreground-color': '#f8f8f2',
+            '--background-color': '#272822',
+            '--dark-card-shade': '#49483e',
+            '--dark-card-shade-end': '#272822',
+            '--gear-icon': '#f8f8f2',
+            '--theme-bg': '#272822',
+            '--border-dark': '#49483e'
         }
     }
 
