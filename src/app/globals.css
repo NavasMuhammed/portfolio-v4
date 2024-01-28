@@ -39,8 +39,9 @@
 
   --theme-bg: #0f0f0f;
   --theme-color: #fff;
-  --border-dark: #242424;
+  --border-color: #242424;
   --progress-bg: #242424;
+  --background-color-settings-panel: #000000;
 
   --white: #fff;
 
@@ -48,6 +49,8 @@
   --background-end-rgb: 255, 255, 255;
   --black: #000000;
   --black: #000;
+
+  --shadow: 0 0 12px rgba(0, 0, 0, .1);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -62,6 +65,7 @@ body {
   animation: reveal 1s ease-in-out;
   color: var(--foreground-color);
   background: var(--background-color);
+  /* shadow */
 }
 
 @keyframes reveal {
@@ -207,9 +211,9 @@ body {
     display: block;
     position: absolute;
     width: 300px;
-    height: 300px;
+    height: max-content;
     opacity: 1;
-    border: 1px solid var(--border-dark);
+    border: 1px solid var(--border-color);
 
   }
 
@@ -260,18 +264,18 @@ body {
 .profile-card-wrapper {
   background-image: var(--profile-card-dark);
   padding: 20px;
-  border: 1px solid var(--border-dark);
+  border: 1px solid var(--border-color);
 }
 
 .skill-card-container {
   background-image: var(--skill-card-dark);
-  border: 1px solid var(--border-dark);
+  border: 1px solid var(--border-color);
 
 }
 
 .hero-card-container {
   background-image: var(--hero-card-dark);
-  border: 1px solid var(--border-dark);
+  border: 1px solid var(--border-color);
 }
 
 .text-quaternary {
@@ -286,7 +290,7 @@ body {
 
 .button-primary {
   justify-content: space-between;
-  border: 1px solid var(--border-dark);
+  border: 1px solid var(--border-color);
 
 }
 
@@ -357,8 +361,8 @@ body {
 
   .settings-panel {
     width: 300px;
-    background: var(--background-color);
-    border: 1px solid var(--border-dark);
+    background-image: linear-gradient(90deg, var(--dark-card-shade), var(--dark-card-shade-end));
+    box-shadow: inset 5px 0px 50px #141313, inset -5px 0px 10px #2c2929;
     margin-bottom: 10px;
     height: 100%;
     right: -300px;
@@ -396,4 +400,23 @@ body {
 
 .settings-open .gear-svg {
   transform: rotate(0deg);
+}
+
+@keyframes stickyNavbar {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+
+}
+
+.navbar-container.nav-scroll-active {
+  background-color: var(--background-color);
+  background-image: none !important;
+  border-bottom: 1.5px solid var(--border-color);
+  animation: stickyNavbar .9s ease-in-out;
+  box-shadow: var(--shadow);
 }
