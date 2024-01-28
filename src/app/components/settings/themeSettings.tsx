@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 
-type Theme = 'Dark' | 'Light' ;
+type Theme = 'Dark' | 'Light';
 type ThemeProperties = {
     '--foreground-color': string;
     '--background-color': string;
@@ -52,9 +52,10 @@ export const ThemeSettings = (props: Props) => {
     }, []);
 
 
-    const theme = localStorage.getItem('theme') as Theme;
-    const [SelectedTheme, setSelectedTheme] = useState(theme)
+    const [SelectedTheme, setSelectedTheme] = useState('')
     useEffect(() => {
+        const theme = localStorage.getItem('theme') as Theme;
+        setSelectedTheme(theme)
         //get the theme from local storage
         if (theme) {
             const root = document.querySelector(':root') as HTMLElement;
@@ -63,7 +64,7 @@ export const ThemeSettings = (props: Props) => {
                 root.style.setProperty(property, themeProperties[property as keyof ThemeProperties]);
             }
         }
-    }, [theme, themeProvider])
+    }, [themeProvider])
 
 
     const handleClick = (theme: Theme, e: React.MouseEvent<HTMLButtonElement>) => {
