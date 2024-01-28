@@ -1,6 +1,6 @@
 'use client'
 import { useRouter } from 'next/navigation'
-import React from 'react'
+import React, { use, useEffect } from 'react'
 import { SvgIconProdiver } from '@/app/utils/helper'
 import SettingsPanel from '../settings/settingsPanel'
 
@@ -31,6 +31,25 @@ const NavBar = () => {
     const handleRouteClick = (link: string) => {
         router.push(link)
     }
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll)
+        return () => window.removeEventListener('scroll', handleScroll)
+    }, [])
+
+    const handleScroll = () => {
+        const bodyScroll = window.scrollY;
+        const navbar = document.querySelector('.navbar-container')
+        if (bodyScroll > 50) {
+            navbar?.classList.add("nav-scroll-active")
+        }
+        else {
+            navbar?.classList.remove("nav-scroll-active");
+        }
+    }
+
+
+
     const handleMenuClick = () => {
         //add a class to the body to show the menu
         document.body.classList.toggle('settings-open')
