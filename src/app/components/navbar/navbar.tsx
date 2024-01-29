@@ -1,7 +1,7 @@
 'use client'
 import { useRouter } from 'next/navigation'
 import React, { use, useEffect } from 'react'
-import { SvgIconProdiver } from '@/app/utils/helper'
+import { SvgIconProvider } from '@/app/utils/helper'
 import SettingsPanel from '../settings/settingsPanel'
 
 const NavBar = () => {
@@ -65,7 +65,7 @@ const NavBar = () => {
                 ))}
             </div>
             <div className="settings-container ">
-                <SvgIconProdiver name="gear" size={48} onClick={handleMenuClick} />
+                <SvgIconProvider name="gear" size={48} onClick={handleMenuClick} />
                 <div className='settings-modal  rounded-3xl p-5 right-16 xl:right-24'>
                     <SettingsPanel />
                 </div>
