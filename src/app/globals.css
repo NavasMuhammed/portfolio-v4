@@ -7,6 +7,7 @@
   --foreground-color: #ffffff;
   /* background color */
   --background-color: #0f0f0f;
+  --accent-color: #f70354;
 
   --dark-card-shade: #262626;
   --dark-card-shade-end: #2626261a;
@@ -246,10 +247,12 @@ body {
   width: 10px;
   height: 10px;
   pointer-events: none;
+  z-index: 9999;
   background-color: var(--cursor-color);
 }
 
 .cursor-outer {
+  z-index: 9999;
   border-radius: 50%;
   margin-left: -10px;
   margin-top: -10px;
@@ -419,4 +422,70 @@ body {
   border-bottom: 1.5px solid var(--border-color);
   animation: stickyNavbar .9s ease-in-out;
   box-shadow: var(--shadow);
+}
+
+svg.hero-shape-svg {
+  fill: var(--accent-color);
+  margin-left: 15px;
+}
+
+svg.suit-case-svg,
+svg.location-svg {
+  fill: var(--quaternary-color)
+}
+
+.social-icons:first-child svg {
+  width: 42px;
+  min-width: 42px;
+  height: 46px;
+  right: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  opacity: 0.8;
+  
+}
+
+.social-icons:not(:first-child) svg {
+  width: 36px;
+  min-width: 36px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  opacity: 0.5;
+
+}
+
+.social-icons::before {
+  content: '';
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  /* top: 0%; */
+  /* left: 50%; */
+  transform: translate(-18%, -9%);
+  background: hsla(0, 0%, 100%, .01);
+  backdrop-filter: blur(5px);
+}
+
+.social-icons.instagram::before {
+  box-shadow: inset 10px 10px 5px 0 #5912ac45, inset 0 -5px 25px 0 #5133058f;
+}
+
+.social-icons.gitHub::before {
+  box-shadow: inset 10px 10px 5px 0 hsla(0, 0%, 100%, .1), inset 0 -5px 25px 0 rgba(59, 59, 59, 0.116);
+}
+
+.social-icons.linkedin::before {
+  box-shadow: inset 10px 10px 5px 0 hsla(0, 0%, 100%, .1), inset 0 -5px 25px 0 rgba(73, 99, 237, .45);
+}
+
+.social-icons.twitter::before {
+  box-shadow: inset 10px 10px 5px 0 hsla(0, 0%, 100%, .1), inset 0 -5px 25px 0 #e91a1a4d;
 }

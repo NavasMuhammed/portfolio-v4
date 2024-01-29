@@ -7,7 +7,7 @@ const Home = () => {
     return (
         <section className='banner'>
             <div className="banner-container flex gap-16 justify-between max-[600px]:flex-col">
-                <PorfileCard />
+                <PorfileCard name='Muhammed Navas' work='FullStack dev at Helixo' loc='Lives in Kochi,India' />
                 <HeroBanner />
                 <SkillCard />
             </div>

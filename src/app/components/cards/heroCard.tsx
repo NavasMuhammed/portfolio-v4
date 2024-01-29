@@ -1,6 +1,6 @@
 'use client'
 import { useIntersectionObserver } from '@/app/hooks/intersectionObserver';
-import { ButtonProdiver, PlaceholderImage } from '@/app/utils/helper';
+import { ButtonProdiver, PlaceholderImage, SvgIconProvider } from '@/app/utils/helper';
 
 interface HeroCardProps {
     name?: string;
@@ -14,19 +14,19 @@ interface HeroHighlights {
 }
 const higilights: HeroHighlights[] = [
     {
-        year: 10,
+        year: 2,
         description: 'YEARS EXPERIENCE'
     },
     {
-        year: 100,
+        year: 5,
         description: 'CLIENTS WORLD WIDE'
     },
     {
-        year: 90,
+        year: 15,
         description: 'TOTAL PROJECTS'
     },
 ];
-const paraPlaceHolder = "My expertise lies in creating compelling user experiences for early-stage startups, achieved by establishing a strong link between the unique."
+const paraPlaceHolder = "Specializing in engaging user experiences for startups, I leverage full-stack and Shopify app development to connect unique identities with audiences for impactful growth."
 const HeroCard = ({ name = 'Name', work = 'Webflow Designer', para = paraPlaceHolder, hero = true }: HeroCardProps) => {
 
     useIntersectionObserver({
@@ -44,15 +44,15 @@ const HeroCard = ({ name = 'Name', work = 'Webflow Designer', para = paraPlaceHo
             <h2 className='hero-title mb-4 text-2xl lg:text-5xl lg:leading-[65px] font-medium lg:mb-8'>
                 <div className="line1 ">Hi I&apos;m {name},</div>
                 <div className="line2 ">{work}</div>
-                <PlaceholderImage x={206} y={15} className='rounded-full' />
+                <SvgIconProvider name='heroShape' size={200} />
             </h2>
-            <p>{para}</p>
+            <p className='font-medium'>{para}</p>
             <hr className='hr-style my-8' />
             {hero && <div className="flex-wrap lg:flex-nowrap  flex  gap-3 hero-higilights">
                 {higilights.map((item, index) => {
                     return <div key={index} className="engagements-num">
                         <div className='flex gap-3 items-center mb-3'>
-                            <PlaceholderImage x={16.8} y={14} className='rounded' />
+                            <SvgIconProvider name='tickShape' size={20} />
                             <span>{item.year}+</span>
                         </div>
                         <p className='leading-6 text-quaternary text-sm font-semibold w-max'>{item.description}</p>

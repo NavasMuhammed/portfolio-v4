@@ -1,6 +1,6 @@
 import Image from "next/image"; // Import the 'Image' component correctly.
 import { ReactNode } from "react";
-import { DefaultIcon, GearIcon } from "./constants";
+import { DefaultIcon, GearIcon, GitHubIcon, HeroShape, InstagramIcon, LinkedinIcon, LocationIcon, SuitCaseIcon, TickIcon, TwitterIcon } from "./constants";
 
 /**
  * Renders a placeholder image with the specified dimensions.
@@ -13,11 +13,17 @@ import { DefaultIcon, GearIcon } from "./constants";
 interface PlaceholderImageProps {
     x: number;
     y?: number;
+    name?: string;
     className?: string;
 }
 export const PlaceholderImage = ({ x, y = x, className }: PlaceholderImageProps): JSX.Element => {
     return (
         <Image src={`https://via.placeholder.com/${x}x${y}`} width={x} height={y} alt='profile image' className={`${className}`} />
+    );
+}
+export const ImageProvider = ({ name, x, y = x, className }: PlaceholderImageProps): JSX.Element => {
+    return (
+        <Image src={`/assets/images/${name}.jpg`} width={x} height={y} alt='profile image' className={`${className}`} />
     );
 }
 
@@ -38,7 +44,7 @@ export const ButtonProdiver = ({ title = "button", icon = iconPlaceHolder, class
     )
 }
 
-interface SvgIconProdiver {
+interface SvgIconProvider {
     name?: string;
     color?: string;
     size?: number;
@@ -46,11 +52,47 @@ interface SvgIconProdiver {
     className?: string;
 }
 
-export const SvgIconProdiver = ({ name, color = '', size = 24, onClick }: SvgIconProdiver) => {
+export const SvgIconProvider = ({ name, color = '', size = 24, onClick }: SvgIconProvider) => {
     switch (name) {
         case 'gear':
             return (
                 <GearIcon className="gear-svg" color={color} size={size} onClick={onClick} />
+            )
+
+        case 'heroShape':
+            return (
+                <HeroShape className='hero-shape-svg' color={color} size={size} />
+            )
+
+        case 'tickShape':
+            return (
+                <TickIcon className="hero-shape-svg" color={color} size={size} onClick={onClick} />
+            )
+
+        case 'work':
+            return (
+                <SuitCaseIcon className="suit-case-svg" color={color} size={size} onClick={onClick} />
+            )
+
+        case 'location':
+            return (
+                <LocationIcon className="location-svg" color={color} size={size} onClick={onClick} />
+            )
+        case 'gitHub':
+            return (
+                <GitHubIcon className="gitHub-svg" color={color} size={size} onClick={onClick} />
+            )
+        case 'linkedin':
+            return (
+                <LinkedinIcon className="linkedin-svg" color={color} size={size} onClick={onClick} />
+            )
+        case 'instagram':
+            return (
+                <InstagramIcon className="instagram-svg" color={color} size={size} onClick={onClick} />
+            )
+        case 'twitter':
+            return (
+                <TwitterIcon className="twitter-svg" color={color} size={size} onClick={onClick} />
             )
 
         default:
