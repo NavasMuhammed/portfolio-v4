@@ -16,7 +16,7 @@ const PorfileCard = ({ name = "Name Here ", work = 'Theme Designer at Envato', l
     ]
     return (
         <div className='profile-card-container h-fit flex flex-col gap-6   xl:sticky xl:top-40 '>
-            <div className="profile-card-wrapper h-max  p-5 rounded-3xl border bg-transparent ">
+            <div className="profile-card-wrapper max-w-lg p-5 rounded-3xl border bg-transparent ">
                 <ImageProvider name='me' x={230} className='rounded-3xl mb-4 w-full' />
                 <div className="profile-title  w-full">
                     <span className="text-xl font-bold text-white-700 leading-8 whitespace-nowrap tracking-wider">{name}</span>
@@ -40,7 +40,7 @@ const PorfileCard = ({ name = "Name Here ", work = 'Theme Designer at Envato', l
                     </div>
                 </div>
             </div>
-            <ButtonProdiver title='Follow' className='self-center ml-auto fancy-hover w-full rounded-3xl p-5' />
+            {/* <ButtonProdiver title='Follow' className='self-center ml-auto fancy-hover w-full rounded-3xl p-5' /> */}
         </div>
     )
 }

@@ -6,7 +6,7 @@ import { progressDataProvider } from '@/app/data/commonDataProvider'
 const SkillCard = () => {
 
     return (
-        <div className="skill-card-container relative xl:sticky xl:top-40 w-full h-max rounded-3xl  p-5 xl:p-8">
+        <div className="skill-card-container relative sm:min-w-96 xl:sticky xl:top-40 w-full  h-max rounded-3xl  p-5 xl:p-8">
             <div className="skill-card-title font-semibold text-2xl ">Top Skills</div>
             <div className="flex flex-col mt-5 gap-6">
                 {
