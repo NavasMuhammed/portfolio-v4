@@ -15,7 +15,7 @@ const experience = [
         content: 'Worked as a freelance developer at a web3 startup. Developed client dashboards of a decentralized finance management system.'
     },
     {
-        year: { start: '2019', end: '2023' },
+        year: { start: '2022', end: '2022' },
         title: 'React Developer | Internship',
         subTitle: 'XcitEducation Worldwide',
         content: 'Joined as a React developer intern and worked on a project where I developed frontend of a internshala like platform for students.'
