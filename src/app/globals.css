@@ -151,11 +151,11 @@ body {
     order: 1;
   }
 
-
-
   .hero-banner-container {
-    order: 3;
+    order: 2;
   }
+
+
 
 
   .settings-modal {
@@ -240,6 +240,8 @@ body {
   .skill-card-container {
     grid-area: skill;
   }
+
+
 }
 
 .cursor {
@@ -445,7 +447,7 @@ svg.location-svg {
   position: relative;
   z-index: 1;
   opacity: 0.8;
-  
+
 }
 
 .social-icons:not(:first-child) svg {
@@ -488,4 +490,68 @@ svg.location-svg {
 
 .social-icons.twitter::before {
   box-shadow: inset 10px 10px 5px 0 hsla(0, 0%, 100%, .1), inset 0 -5px 25px 0 #e91a1a4d;
+}
+
+
+.switcher label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 78px;
+  height: 34px;
+  background: transparent;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+  border: 1px solid var(--border-color);
+  transition: .3s;
+}
+
+.switcher label:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5px;
+  width: 24px;
+  height: 24px;
+  background-color: var(--foreground-color);
+  border-radius: 50%;
+  transition: .3s;
+}
+
+.switcher input:checked+label:after {
+  left: calc(100% - 29px);
+  background-color: var(--foreground-color);
+}
+
+.switcher input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.switcher-disabled {
+  color: var(--octonary-color);
+}
+
+.card-subdued {
+  color: var(--octonary-color);
+}
+
+.card-container {
+  padding: 30px;
+  border-radius: 30px;
+  border: 1px solid var(--border-color);
+}
+
+.year-span {
+  padding: 3px 12px;
+  width: fit-content;
+  border-radius: 100px;
+  border: 1px solid var(--octonary-color);
+  color: var(--quaternary-color);
+}
+
+.card-container {
+  max-width: 650px;
 }

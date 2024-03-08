@@ -32,7 +32,7 @@ const MainLayout = ({ children }: MainLayoutProps) => {
     }, []);
 
     return (
-        <main className='main-layout'>
+        <main className='main-layout mb-3'>
             <NavBar />
             <section className='pt-40 px-4 lg:pt-36 lg:px-100 '>{children}</section>
             <SettingsPanel />
