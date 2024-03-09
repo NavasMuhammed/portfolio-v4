@@ -1,3 +1,4 @@
+import { useIntersectionObserver } from "@/app/hooks/intersectionObserver"
 
 interface SwitchComponentProps {
     Headder?: string

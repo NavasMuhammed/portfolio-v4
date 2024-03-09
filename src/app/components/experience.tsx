@@ -26,7 +26,7 @@ const Experience = () => {
     return (
         <div className='flex flex-wrap gap-3 mt-3 mb-5'>
             {experience.map((exp, index) => (
-                <Card key={index} year={exp.year} title={exp.title} subTitle={exp.subTitle} content={exp.content} />
+                <Card id='experience' key={index} year={exp.year} title={exp.title} subTitle={exp.subTitle} content={exp.content} />
             ))}
         </div>
     )

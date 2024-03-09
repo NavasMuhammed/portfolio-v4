@@ -422,6 +422,10 @@ body {
   .navbar-container.nav-scroll-active {
     height: 90px;
   }
+  .settings-open .settings-modal {
+    background-image: none;
+    background-color: var(--background-color-settings-panel);
+}
 }
 
 .navbar-container.nav-scroll-active {
@@ -547,6 +551,7 @@ svg.location-svg {
 .card-container {
   padding: 30px;
   border-radius: 30px;
+  max-width: 650px;
   border: 1px solid var(--border-color);
 }
 
@@ -558,6 +563,3 @@ svg.location-svg {
   color: var(--quaternary-color);
 }
 
-.card-container {
-  max-width: 650px;
-}
