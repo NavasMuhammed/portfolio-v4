@@ -1,5 +1,6 @@
+'use client'
+import { useIntersectionObserver } from '@/app/hooks/intersectionObserver';
 import React from 'react'
-
 interface CardProps {
     year?: {
         start?: string;
@@ -8,11 +9,20 @@ interface CardProps {
     title?: string;
     subTitle?: string;
     content?: string;
+    id?: string;
 }
 
-export const Card = ({ year, title, subTitle, content }: CardProps) => {
+export const Card = ({ year, title, subTitle, content, id }: CardProps) => {
+    useIntersectionObserver({
+        elementSelector: `#${id}.card-container`,
+        classes: {
+            add: 'animate-fadeInUp',
+            remove: 'invisible',
+        },
+        threshold: 0.3,
+    });
     return (
-        <div className='card-container flex flex-col gap-2'>
+        <div id={id} className='card-container flex flex-col gap-2 invisible'>
             <div className="year-span">
                 <span>{year?.start}</span>
                 <span> - </span>

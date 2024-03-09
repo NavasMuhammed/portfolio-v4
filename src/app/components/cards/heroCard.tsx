@@ -1,6 +1,6 @@
 'use client'
 import { useIntersectionObserver } from '@/app/hooks/intersectionObserver';
-import { ButtonProdiver, PlaceholderImage, SvgIconProvider } from '@/app/utils/helper';
+import { ButtonProdiver, SvgIconProvider } from '@/app/utils/helper';
 
 interface HeroCardProps {
     name?: string;

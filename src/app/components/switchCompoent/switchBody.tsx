@@ -12,6 +12,10 @@ const SwitchBody = ({ body, switchBody, target }: SwitchBodyProps) => {
     useEffect(() => {
         const handleSwitchChange = () => {
             setIsChecked(!isChecked);
+            document.querySelectorAll('.card-container').forEach((element) => {
+                element.classList.add('invisible')
+                element.classList.remove('animate-fadeInUp')
+            })
         };
 
         const switchInputValue = document.getElementById(`${target}`) as HTMLInputElement;

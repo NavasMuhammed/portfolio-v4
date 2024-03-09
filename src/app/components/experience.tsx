@@ -15,7 +15,7 @@ const experience = [
         content: 'Worked as a freelance developer at a web3 startup. Developed client dashboards of a decentralized finance management system.'
     },
     {
-        year: { start: '2019', end: '2023' },
+        year: { start: '2022', end: '2022' },
         title: 'React Developer | Internship',
         subTitle: 'XcitEducation Worldwide',
         content: 'Joined as a React developer intern and worked on a project where I developed frontend of a internshala like platform for students.'
@@ -26,7 +26,7 @@ const Experience = () => {
     return (
         <div className='flex flex-wrap gap-3 mt-3 mb-5'>
             {experience.map((exp, index) => (
-                <Card key={index} year={exp.year} title={exp.title} subTitle={exp.subTitle} content={exp.content} />
+                <Card id='experience' key={index} year={exp.year} title={exp.title} subTitle={exp.subTitle} content={exp.content} />
             ))}
         </div>
     )
