@@ -418,6 +418,12 @@ body {
 
 }
 
+@media (max-width: 768px) {
+  .navbar-container.nav-scroll-active {
+    height: 90px;
+  }
+}
+
 .navbar-container.nav-scroll-active {
   background-color: var(--background-color);
   background-image: none !important;
