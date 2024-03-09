@@ -148,11 +148,11 @@ body {
   }
 
   .skill-card-container {
-    order: 1;
+    order: 2;
   }
 
   .hero-banner-container {
-    order: 2;
+    order: 1;
   }
 
 
