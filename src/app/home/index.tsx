@@ -7,10 +7,11 @@ import Switch from '@components/switchCompoent/switch'
 import SwitchBody from '@components/switchCompoent/switchBody'
 import Experience from '@components/experience'
 import Education from '@components/Education'
+import { ProjectsSection } from '../components/projects/projectsSection'
 
 const Home = () => {
     return (
-        <section className='banner'>
+        <section className='home-container'>
             <div className="banner-container flex gap-16 justify-between max-[600px]:flex-col">
                 <PorfileCard name='Muhammed Navas' work='FullStack dev at Helixo' loc='Lives in Kochi,India' />
                 <div className='hero-banner-container flex gap-7 flex-wrap lg:flex-col '>
@@ -24,6 +25,7 @@ const Home = () => {
                 </div>
                 <SkillCard />
             </div>
+            <ProjectsSection />
         </section>
     )
 }

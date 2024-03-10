@@ -15,15 +15,16 @@ interface PlaceholderImageProps {
     y?: number;
     name?: string;
     className?: string;
+    imgStyles?: React.CSSProperties;
 }
 export const PlaceholderImage = ({ x, y = x, className }: PlaceholderImageProps): JSX.Element => {
     return (
         <Image src={`https://via.placeholder.com/${x}x${y}`} width={x} height={y} alt='profile image' className={`${className}`} />
     );
 }
-export const ImageProvider = ({ name, x, y = x, className }: PlaceholderImageProps): JSX.Element => {
+export const ImageProvider = ({ name, x, y = x, className, imgStyles }: PlaceholderImageProps): JSX.Element => {
     return (
-        <Image src={`/assets/images/${name}.jpg`} width={x} height={y} alt='profile image' className={`${className}`} />
+        <Image style={{ ...imgStyles }} src={`/assets/images/${name}.jpg`} width={x} height={y} alt='image' className={`${className}`} />
     );
 }
 
