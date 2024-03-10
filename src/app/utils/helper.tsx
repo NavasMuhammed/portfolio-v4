@@ -34,7 +34,7 @@ interface ButtonProdiverProps {
     className?: string;
 }
 
-const iconPlaceHolder = <div>⚡</div>
+const iconPlaceHolder = <div>🔗</div>
 
 export const ButtonProdiver = ({ title = "button", icon = iconPlaceHolder, className = '' }: ButtonProdiverProps) => {
     return (
