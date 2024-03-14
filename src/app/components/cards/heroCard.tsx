@@ -59,7 +59,7 @@ const HeroCard = ({ name = 'Name', work = 'Webflow Designer', para = paraPlaceHo
                     </div>
                 }
                 )}
-                <ButtonProdiver title='Resume' className='ml-auto w-max fancy-hover px-3.5 py-3 h-fit rounded-xl sm:mr-0' />
+                <ButtonProdiver link='https://www.canva.com/design/DAE4gakUnqs/VgJBFKzuM05-ySZIepAy4w/edit?utm_content=DAE4gakUnqs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton' title='Resume' className='ml-auto w-max fancy-hover px-3.5 py-3 h-fit rounded-xl sm:mr-0' />
             </div>}
         </div >
     )
