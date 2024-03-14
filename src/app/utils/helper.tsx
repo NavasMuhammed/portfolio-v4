@@ -32,13 +32,19 @@ interface ButtonProdiverProps {
     title?: string;
     icon?: ReactNode;
     className?: string;
+    link?: string;
 }
 
 const iconPlaceHolder = <div>🔗</div>
 
-export const ButtonProdiver = ({ title = "button", icon = iconPlaceHolder, className = '' }: ButtonProdiverProps) => {
+export const ButtonProdiver = ({ title = "button", icon = iconPlaceHolder, className = '', link = "" }: ButtonProdiverProps) => {
+    const handleClick = () => {
+        if (link !== "") {
+            window.open(link, '_blank')
+        }
+    }
     return (
-        <div className={`button-primary flex flex-row gap-3 ${className}`}>
+        <div onClick={handleClick} className={`button-primary flex flex-row gap-3 ${className}`}>
             <button className='font-normal   '>{title}</button>
             <button className='btn-secondary'>{icon}</button>
         </div>

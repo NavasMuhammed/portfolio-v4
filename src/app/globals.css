@@ -587,3 +587,11 @@ svg.location-svg {
   border: 1px solid var(--octonary-color);
   color: var(--quaternary-color);
 }
+
+.card-container:hover {
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  scale: 1.01;
+
+}

@@ -9,9 +9,10 @@ interface CardProps {
     content?: string;
     id?: string;
     tag?: string;
+    hanldeClick?: () => void;
 }
 
-export const ProjectCard = ({ name, title, subTitle, content, id, tag }: CardProps) => {
+export const ProjectCard = ({ name, title, subTitle, content, id, tag, hanldeClick }: CardProps) => {
     useIntersectionObserver({
         elementSelector: `#${id}.card-container`,
         classes: {
@@ -20,8 +21,12 @@ export const ProjectCard = ({ name, title, subTitle, content, id, tag }: CardPro
         },
         threshold: 0.3,
     });
+
+    //add a hover effect to the card
+
+
     return (
-        <div id={id} className='card-container flex flex-col gap-2 invisible relative'>
+        <div onClick={hanldeClick} id={id} className='card-container flex flex-col gap-2 invisible relative'>
             {tag ? < div className="ribbon ">{tag}</div> : null}
             <div className="project-image-container">
                 <ImageProvider x={600} name={`${name}`} className='project-image rounded-xl' />
