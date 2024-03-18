@@ -445,6 +445,8 @@ body {
 @media (max-width: 768px) {
   .navbar-container.nav-scroll-active {
     height: 90px;
+    top: 9px;
+    border-radius: 48px;
   }
 
   .settings-open .settings-modal {
@@ -594,4 +596,8 @@ svg.location-svg {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   scale: 1.01;
 
+}
+
+.logo-svg {
+  fill: var(--foreground-color);
 }

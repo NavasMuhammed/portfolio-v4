@@ -58,7 +58,7 @@ const NavBar = () => {
 
     return (
         <nav className="navbar-container z-50 fixed w-full flex px-10   xl:px-100 justify-between items-center">
-            <div className="navbar-logo  py-12 ">LOGO</div>
+            <div className="navbar-logo  py-12 "><SvgIconProvider  name='logo' size={38} /></div>
             <div className="navbar-items flex flex-1 justify-center ">
                 {navItems.map((item, index) => (
                     <div key={index} onClick={() => handleRouteClick(item.link)} className="navbar-item p-10 py-12">{item.name}</div>
