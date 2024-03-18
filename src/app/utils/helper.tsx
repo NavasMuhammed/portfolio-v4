@@ -1,6 +1,6 @@
 import Image from "next/image"; // Import the 'Image' component correctly.
 import { ReactNode } from "react";
-import { DefaultIcon, GearIcon, GitHubIcon, HeroShape, InstagramIcon, LinkedinIcon, LocationIcon, SuitCaseIcon, TickIcon, TwitterIcon } from "./constants";
+import { DefaultIcon, GearIcon, GitHubIcon, HeroShape, InstagramIcon, LinkedinIcon, LocationIcon, LogoIcon, SuitCaseIcon, TickIcon, TwitterIcon } from "./constants";
 
 /**
  * Renders a placeholder image with the specified dimensions.
@@ -61,6 +61,10 @@ interface SvgIconProvider {
 
 export const SvgIconProvider = ({ name, color = '', size = 24, onClick }: SvgIconProvider) => {
     switch (name) {
+        case 'logo':
+            return (
+                <LogoIcon className="logo-svg" color={color} size={size} onClick={onClick} />
+            )
         case 'gear':
             return (
                 <GearIcon className="gear-svg" color={color} size={size} onClick={onClick} />
