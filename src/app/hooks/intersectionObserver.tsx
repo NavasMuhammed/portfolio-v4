@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 type UseIntersectionObserverProps = {
     elementSelector: string;
@@ -36,4 +36,51 @@ export const useIntersectionObserver = ({
             observer.observe(element);
         });
     }, [elementSelector, classes.add, classes.remove, threshold]);
+};
+
+
+
+
+
+
+export const useViewPortIntersectionObserver = (
+    elementSelector: string,
+    threshold: number
+): boolean => {
+    const [isIntersecting, setIsIntersecting] = useState(false);
+
+    useEffect(() => {
+        let elements: NodeListOf<HTMLElement> = document.querySelectorAll(
+            elementSelector
+        );
+
+        let observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        setIsIntersecting(true);
+                    } else {
+                        setIsIntersecting(false);
+                    }
+                });
+            },
+            {
+                rootMargin: '0px',
+                threshold: threshold,
+            }
+        );
+
+        elements.forEach((element) => {
+            observer.observe(element);
+        });
+
+        // Clean up the observer when the component unmounts
+        return () => {
+            elements.forEach((element) => {
+                observer.unobserve(element);
+            });
+        };
+    }, [elementSelector, threshold]);
+
+    return isIntersecting;
 };

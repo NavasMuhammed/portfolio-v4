@@ -1,7 +1,6 @@
 'use client'
 import { useIntersectionObserver } from '@/app/hooks/intersectionObserver';
-import { ImageProvider } from '@/app/utils/helper';
-import React from 'react'
+import { ImageProvider, SvgIconProvider } from '@/app/utils/helper';
 interface CardProps {
     name: string;
     title?: string;
@@ -10,9 +9,10 @@ interface CardProps {
     id?: string;
     tag?: string;
     hanldeClick?: () => void;
+    tools: string[];
 }
 
-export const ProjectCard = ({ name, title, subTitle, content, id, tag, hanldeClick }: CardProps) => {
+export const ProjectCard = ({ name, title, subTitle, content, id, tag, hanldeClick, tools }: CardProps) => {
     useIntersectionObserver({
         elementSelector: `#${id}.card-container`,
         classes: {
@@ -35,6 +35,18 @@ export const ProjectCard = ({ name, title, subTitle, content, id, tag, hanldeCli
             <span className='mt-3 text-xl'>{title}</span>
             <span className='text-s card-subdued'>{subTitle}</span>
             <span>{content}</span>
+            <div className='flex flex-wrap fe sm:hidden items-center justify-around gap-y-5 p-3'>
+                {
+                    tools.map((tool, index) => {
+                        return (
+                            <div className='flex items-center justify-center tools-svg' style={{ width: 96, height: 32, objectFit: 'cover' }} key={index}>
+                                <SvgIconProvider name={tool} />
+                            </div>
+                        )
+                    }
+                    )
+                }
+            </div>
         </div >
     )
 }

@@ -68,6 +68,7 @@ export const ThemeSettings = (props: Props) => {
 
 
     const handleClick = (theme: Theme, e: React.MouseEvent<HTMLButtonElement>) => {
+        document.body.classList.toggle('settings-open')
         //store the theme in local storage
         localStorage.setItem('theme', theme);
         setSelectedTheme(theme)

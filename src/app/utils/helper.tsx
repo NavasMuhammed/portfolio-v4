@@ -1,6 +1,6 @@
 import Image from "next/image"; // Import the 'Image' component correctly.
 import { ReactNode } from "react";
-import { DefaultIcon, GearIcon, GitHubIcon, HeroShape, InstagramIcon, LinkedinIcon, LocationIcon, LogoIcon, SuitCaseIcon, TickIcon, TwitterIcon } from "./constants";
+import { DefaultIcon, DigitalOceanIcon, DockerIcon, ExpressIcon, GearIcon, GitHubIcon, GraphqlIcon, HeroShape, InstagramIcon, LinkedinIcon, LocationIcon, LogoIcon, MongoDBIcon, MuiIcon, NextJsIcon, NodeJsIcon, PrismaIcon, ReactIcon, RemixIcon, ShopifyIcon, SuitCaseIcon, SupabaseIcon, TailwindIcon, TickIcon, TwitterIcon, VercelIcon, ViteIcon } from "./constants";
 
 /**
  * Renders a placeholder image with the specified dimensions.
@@ -61,6 +61,70 @@ interface SvgIconProvider {
 
 export const SvgIconProvider = ({ name, color = '', size = 24, onClick }: SvgIconProvider) => {
     switch (name) {
+        case 'GraphQL':
+            return (
+                <GraphqlIcon className="animate-popup graphql-svg" color={color} size={size} onClick={onClick} />
+            )
+        case 'TailwindCss':
+            return (
+                <TailwindIcon className="animate-popup tailwind-svg" color={color} size={size} onClick={onClick} />
+            )
+        case 'Supabase':
+            return (
+                <SupabaseIcon className="animate-popup supabase-svg" color={color} size={size} onClick={onClick} />
+            )
+        case 'ViteJs':
+            return (
+                <ViteIcon className="animate-popup vite-js-svg" color={color} size={size} onClick={onClick} />
+            )
+        case 'MongoDB':
+            return (
+                <MongoDBIcon className="animate-popup mongo-db-svg" color={color} size={size} onClick={onClick} />
+            )
+        case 'MUI':
+            return (
+                <MuiIcon className="animate-popup mui-svg" color={color} size={size} onClick={onClick} />
+            )
+        case 'Remix':
+            return (
+                <RemixIcon className="animate-popup remix-svg" color={color} size={size} onClick={onClick} />
+            )
+        case 'NodeJs':
+            return (
+                <NodeJsIcon className="animate-popup node-js-svg" color={color} size={size} onClick={onClick} />
+            )
+        case 'Express':
+            return (
+                <ExpressIcon className="animate-popup express-svg" color={color} size={size} onClick={onClick} />
+            )
+        case 'Shopify':
+            return (
+                <ShopifyIcon className="animate-popup digital-ocean-svg" color={color} size={size} onClick={onClick} />
+            )
+        case 'DigitalOcean':
+            return (
+                <DigitalOceanIcon className="animate-popup digital-ocean-svg" color={color} size={size} onClick={onClick} />
+            )
+        case 'Docker':
+            return (
+                <DockerIcon className="animate-popup docker-svg" color={color} size={size} onClick={onClick} />
+            )
+        case 'Prisma':
+            return (
+                <PrismaIcon className="animate-popup vercel-svg" color={color} size={size} onClick={onClick} />
+            )
+        case 'NextJs':
+            return (
+                <NextJsIcon className="animate-popup vercel-svg" color={color} size={size} onClick={onClick} />
+            )
+        case 'Vercel':
+            return (
+                <VercelIcon className="animate-popup vercel-svg" color={color} size={size} onClick={onClick} />
+            )
+        case 'React':
+            return (
+                <ReactIcon className="animate-popup react-svg" color={color} size={size} onClick={onClick} />
+            )
         case 'logo':
             return (
                 <LogoIcon className="logo-svg" color={color} size={size} onClick={onClick} />
