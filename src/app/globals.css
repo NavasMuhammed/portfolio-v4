@@ -450,8 +450,10 @@ body {
   }
 
   .settings-open .settings-modal {
+    padding: 100px 0 0 30px;
     background-image: none;
     background-color: var(--background-color-settings-panel);
+    box-shadow: -7px 9px 0px 69px rgb(0 0 0);
   }
 }
 
@@ -600,4 +602,11 @@ svg.location-svg {
 
 .logo-svg {
   fill: var(--foreground-color);
+}
+
+.horizontal-divider {
+  border: 0.5px solid var(--border-color);
+  height: 0px;
+  border-radius: 91px;
+  background: var(--border-color);
 }

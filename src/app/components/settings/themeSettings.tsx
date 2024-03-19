@@ -80,7 +80,7 @@ export const ThemeSettings = (props: Props) => {
 
     return (
         <div className="flex gap-6 flex-col justify-start">
-            <span>ThemeSettings</span>
+            <span className="text-xl sm:text-sm">ThemeSettings</span>
             <div className="flex gap-7 flex-wrap">
                 {
                     Object.keys(themeProvider).map((theme, index) => {
