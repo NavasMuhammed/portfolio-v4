@@ -34,7 +34,7 @@ const MainLayout = ({ children }: MainLayoutProps) => {
     return (
         <main className='main-layout mb-3'>
             <NavBar />
-            <section className='pt-28 px-4 lg:pt-36 lg:px-100 '>{children}</section>
+            <section className='overflow-hidden pt-28 px-4 lg:pt-36 lg:px-100 sm:overflow-visible'>{children}</section>
             <SettingsPanel />
             <div className='cursor fixed rounded-lg top-0 left-0 right-0 bottom-0' ></div>
             <div className='cursor-outer fixed  top-0 left-0 right-0 bottom-0' ></div>
