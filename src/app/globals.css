@@ -632,7 +632,7 @@ svg.location-svg {
 }
 
 .tools-svg svg {
-  fill: var(--foreground-color);
+  /* fill: var(); */
   width: 100%;
   height: 100%;
 }
