@@ -116,7 +116,7 @@ export const ReactIcon = ({ size, color, onClick, className }: svgIconProps) => 
 )
 
 export const NextJsIcon = ({ size, color, onClick, className }: svgIconProps) => (
-    <svg style={{ fill: "none" }} className={`${className}`} width={`${size}`} height={`${size}`} viewBox="0 0 128 128">
+    <svg className={`${className}`} width={`${size}`} height={`${size}`} viewBox="0 0 128 128">
         <circle cx="64" cy="64" r="64"></circle><path fill="url(#aNext)" d="M106.317 112.014 49.167 38.4H38.4v51.179h8.614v-40.24l52.54 67.884a64.216 64.216 0 0 0 6.763-5.209z"></path>
         <path fill="url(#bNext)" d="M81.778 38.4h8.533v51.2h-8.533z"></path>
         <defs><linearGradient id="aNext" x1="109" x2="144.5" y1="116.5" y2="160.5" gradientTransform="scale(.71111)" gradientUnits="userSpaceOnUse"><stop stopColor="#fff"></stop><stop offset="1" stopColor="#fff" stopOpacity="0"></stop>
@@ -184,7 +184,7 @@ export const TypeScriptIcon = ({ size, color, onClick, className }: svgIconProps
 )
 
 export const ExpressIcon = ({ size, color, onClick, className }: svgIconProps) => (
-    <svg className={`${className}`} width={`${size}`} height={`${size}`} viewBox="0 0 128 128">
+    <svg className={`${className}`} width={`${size}`} height={`${size}`} fill="currentColor" viewBox="0 0 128 128">
         <path d="M126.67 98.44c-4.56 1.16-7.38.05-9.91-3.75-5.68-8.51-11.95-16.63-18-24.9-.78-1.07-1.59-2.12-2.6-3.45C89 76 81.85 85.2 75.14 94.77c-2.4 3.42-4.92 4.91-9.4 3.7l26.92-36.13L67.6 29.71c4.31-.84 7.29-.41 9.93 3.45 5.83 8.52 12.26 16.63 18.67 25.21 6.45-8.55 12.8-16.67 18.8-25.11 2.41-3.42 5-4.72 9.33-3.46-3.28 4.35-6.49 8.63-9.72 12.88-4.36 5.73-8.64 11.53-13.16 17.14-1.61 2-1.35 3.3.09 5.19C109.9 76 118.16 87.1 126.67 98.44zM1.33 61.74c.72-3.61 1.2-7.29 2.2-10.83 6-21.43 30.6-30.34 47.5-17.06C60.93 41.64 63.39 52.62 62.9 65H7.1c-.84 22.21 15.15 35.62 35.53 28.78 7.15-2.4 11.36-8 13.47-15 1.07-3.51 2.84-4.06 6.14-3.06-1.69 8.76-5.52 16.08-13.52 20.66-12 6.86-29.13 4.64-38.14-4.89C5.26 85.89 3 78.92 2 71.39c-.15-1.2-.46-2.38-.7-3.57q.03-3.04.03-6.08zm5.87-1.49h50.43c-.33-16.06-10.33-27.47-24-27.57-15-.12-25.78 11.02-26.43 27.57z"></path>
     </svg>
 )
@@ -216,7 +216,7 @@ export const DigitalOceanIcon = ({ size, color, onClick, className }: svgIconPro
 
 
 export const VercelIcon = ({ size, color, onClick, className }: svgIconProps) => (
-    <svg className={`${className}`} width={`${size}`} height={`${size}`} viewBox="0 30 128 69">
+    <svg className={`${className}`} width={`${size}`} height={`${size}`} fill="currentColor" viewBox="0 27 128 69">
         <path d="M64.144 56.789c-4.976 0-8.563 3.245-8.563 8.112s4.034 8.113 9.014 8.113c3.006 0 5.656-1.19 7.297-3.195l-3.448-1.992c-.91.996-2.294 1.577-3.849 1.577-2.159 0-3.993-1.127-4.674-2.93H72.55a8.151 8.151 0 0 0 .158-1.577c0-4.863-3.583-8.108-8.564-8.108zm-4.259 6.535c.563-1.798 2.105-2.93 4.26-2.93 2.158 0 3.7 1.132 4.259 2.93zm-1.019-11.493L46.377 73.465 33.884 51.83h4.683l7.806 13.521 7.806-13.521zm-42.212-2.253 16.653 28.845H0Zm74.172 15.324c0 2.704 1.767 4.507 4.507 4.507 1.857 0 3.25-.843 3.966-2.218l3.462 1.997c-1.434 2.388-4.12 3.826-7.428 3.826-4.98 0-8.563-3.245-8.563-8.112 0-4.868 3.587-8.113 8.563-8.113 3.308 0 5.99 1.438 7.428 3.826l-3.462 1.997c-.716-1.375-2.109-2.218-3.966-2.218-2.736 0-4.507 1.803-4.507 4.508zM128 51.83v20.732h-4.056V51.831Zm-15.324 4.958c-4.976 0-8.563 3.245-8.563 8.112s4.038 8.113 9.014 8.113c3.006 0 5.656-1.19 7.297-3.195l-3.448-1.992c-.91.996-2.294 1.577-3.85 1.577-2.158 0-3.992-1.127-4.673-2.93h12.629a8.16 8.16 0 0 0 .157-1.577c0-4.863-3.583-8.108-8.563-8.108zm-4.26 6.535c.564-1.798 2.101-2.93 4.26-2.93s3.7 1.132 4.26 2.93zm-22.999-6.085v4.368a5.157 5.157 0 0 0-1.442-.221c-2.618 0-4.507 1.803-4.507 4.507v6.67h-4.056V57.24h4.056v4.147c0-2.29 2.664-4.147 5.95-4.147z"></path>
     </svg>
 )
@@ -272,6 +272,34 @@ export const RemixIcon = ({ size, color, onClick, className }: svgIconProps) => 
     </svg>
 )
 
+export const BootStrapIcon = ({ size, color, onClick, className }: svgIconProps) => (
+    <svg className={`${className}`} width={`${size}`} height={`${size}`} viewBox="0 0 128 128">
+        <defs>
+            <linearGradient id="aBoot" x1="76.079" x2="523.48" y1="10.798" y2="365.95" gradientTransform="translate(1.11 14.613) scale(.24566)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#9013fe"></stop><stop offset="1" stop-color="#6610f2"></stop> </linearGradient>
+            <linearGradient id="bBoot" x1="193.51" x2="293.51" y1="109.74" y2="278.87" gradientTransform="translate(0 52)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff"></stop><stop offset="1" stop-color="#f1e5fc"></stop></linearGradient>
+            <filter id="c" width="197" height="249" x="161.9" y="135.46" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix>
+                <feOffset dy="4"></feOffset><feGaussianBlur stdDeviation="8"></feGaussianBlur><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"></feColorMatrix>
+                <feBlend in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend><feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend>
+            </filter>
+        </defs>
+        <path fill="url(#aBoot)" d="M14.985 27.712c-.237-6.815 5.072-13.099 12.249-13.099h73.54c7.177 0 12.486 6.284 12.249 13.099-.228 6.546.068 15.026 2.202 21.94 2.141 6.936 5.751 11.319 11.664 11.883v6.387c-5.913.564-9.523 4.947-11.664 11.883-2.134 6.914-2.43 15.394-2.202 21.94.237 6.815-5.072 13.098-12.249 13.098h-73.54c-7.177 0-12.486-6.284-12.249-13.098.228-6.546-.068-15.026-2.203-21.94-2.14-6.935-5.76-11.319-11.673-11.883v-6.387c5.913-.563 9.533-4.947 11.673-11.883 2.135-6.914 2.43-15.394 2.203-21.94z"></path>
+        <path fill="url(#bBoot)" d="M267.1 364.46c47.297 0 75.798-23.158 75.798-61.355 0-28.873-20.336-49.776-50.532-53.085v-1.203c22.185-3.609 39.594-24.211 39.594-47.219 0-32.783-25.882-54.138-65.322-54.138h-88.74v217zm-54.692-189.48h45.911c24.958 0 39.131 11.128 39.131 31.279 0 21.505-16.484 33.535-46.372 33.535h-38.67zm0 161.96v-71.431h45.602c32.661 0 49.608 12.03 49.608 35.49 0 23.459-16.484 35.941-47.605 35.941z" filter="url(#c)" transform="translate(1.494 2.203) scale(.24566)"></path>
+    </svg>
+)
+
+export const WebPackIcon = ({ size, color, onClick, className }: svgIconProps) => (
+    <svg className={`${className}`} width={`${size}`} height={`${size}`} viewBox="0 0 128 128">
+        <path fill="#8ed6fb" d="M117.29 98.1L66.24 127v-22.51L98 87l19.29 11.1zm3.5-3.16V34.55l-18.68 10.8v38.81l18.67 10.77zM10.71 98.1l51 28.88v-22.49L29.94 87zm-3.5-3.16V34.55l18.68 10.8v38.81zm2.19-64.3L61.76 1v21.76L28.21 41.21l-.27.15zm109.18 0L66.24 1v21.76L99.79 41.2l.27.15 18.54-10.71z"></path>
+        <path fill="#1c78c0" d="M61.76 99.37L30.37 82.1V47.92L61.76 66zm4.48 0l31.39-17.25v-34.2L66.24 66zM32.5 44L64 26.66 95.5 44 64 62.16 32.5 44z"></path>
+    </svg>
+)
+export const JqueryIcon = ({ size, color, onClick, className }: svgIconProps) => (
+    <svg className={`${className}`} width={`${size}`} height={`${size}`} viewBox="0 10 128 119">
+        <path fill="#0868AC" d="M27.758 20.421c-7.352 10.565-6.437 24.312-.82 35.54l.411.798.263.506.164.291.293.524c.174.307.353.612.536.919l.306.504c.203.326.41.65.622.973l.265.409c.293.437.592.872.901 1.301l.026.033.152.205c.267.368.542.732.821 1.093l.309.393c.249.313.502.623.759.934l.29.346c.345.406.698.812 1.057 1.208l.021.022.041.045c.351.383.71.758 1.075 1.133l.344.347c.282.284.569.563.858.841l.351.334c.387.364.777.722 1.176 1.07l.018.016.205.174c.351.305.708.605 1.068.902l.442.353c.294.235.591.468.89.696l.477.361c.33.243.663.482.999.717l.363.258.101.072c.318.22.645.431.97.642l.42.28c.5.315 1.007.628 1.519.93l.42.237c.377.217.756.431 1.14.639l.631.326.816.424.188.091.334.161c.427.204.858.405 1.293.599l.273.122c.498.218 1.001.427 1.508.628l.368.144c.469.182.945.359 1.423.527l.179.062c.524.184 1.054.353 1.587.52l.383.114c.542.164 1.079.358 1.638.462 35.553 6.483 45.88-21.364 45.88-21.364-8.674 11.3-24.069 14.28-38.656 10.962-.553-.125-1.089-.298-1.628-.456l-.406-.124a44.793 44.793 0 01-1.568-.51l-.215-.077a49.537 49.537 0 01-1.382-.513l-.388-.152c-.501-.198-1-.405-1.492-.62l-.298-.133a55.398 55.398 0 01-1.259-.585l-.364-.175c-.327-.159-.65-.328-.974-.495l-.649-.341c-.395-.21-.782-.43-1.167-.654l-.394-.219a58.203 58.203 0 01-1.52-.932l-.41-.273a40.515 40.515 0 01-1.081-.719l-.349-.245a54.203 54.203 0 01-1.022-.738l-.453-.343c-.31-.237-.618-.476-.922-.721l-.411-.33c-.388-.318-.771-.64-1.149-.969l-.126-.105a54.797 54.797 0 01-1.208-1.098l-.34-.328a33.158 33.158 0 01-.868-.851l-.34-.34c-.362-.37-.717-.745-1.065-1.126l-.053-.057a41.973 41.973 0 01-1.08-1.229l-.283-.336a44.66 44.66 0 01-.777-.961l-.285-.355a52.469 52.469 0 01-.898-1.195c-8.098-11.047-11.008-26.283-4.535-38.795m17.081-1.626c-5.316 7.65-5.028 17.893-.88 25.983a33.747 33.747 0 002.351 3.925c.796 1.143 1.68 2.501 2.737 3.418.383.422.784.834 1.193 1.238l.314.311c.397.385.801.764 1.218 1.132l.05.043.012.012c.462.405.939.794 1.423 1.178l.323.252c.486.372.981.738 1.489 1.087l.043.033.68.447.322.213c.363.233.73.459 1.104.676l.156.092c.322.185.648.367.975.545l.347.18.682.354.103.047c.469.23.941.453 1.424.663l.314.13c.386.163.775.323 1.167.473l.5.184c.356.132.712.253 1.072.373l.484.155c.511.158 1.017.359 1.549.448 27.45 4.547 33.787-16.588 33.787-16.588-5.712 8.228-16.775 12.153-28.58 9.089a34.726 34.726 0 01-1.555-.449l-.467-.151a29 29 0 01-1.087-.374l-.491-.183a38.673 38.673 0 01-1.171-.473l-.315-.133a32.78 32.78 0 01-1.432-.666l-.718-.365-.414-.213c-.306-.166-.61-.338-.909-.514l-.217-.123a30.75 30.75 0 01-1.1-.672l-.332-.221-.712-.472a37.364 37.364 0 01-1.484-1.085l-.334-.264c-5.167-4.079-9.263-9.655-11.21-15.977-2.041-6.557-1.601-13.917 1.935-19.891m14.847-.518c-3.134 4.612-3.442 10.341-1.267 15.435 2.293 5.407 6.992 9.648 12.477 11.66l.682.235.3.096c.323.102.644.22.978.282 15.157 2.929 19.268-7.777 20.362-9.354-3.601 5.185-9.653 6.43-17.079 4.627a18.837 18.837 0 01-1.796-.555 22.303 22.303 0 01-2.134-.886 22.19 22.19 0 01-3.741-2.282c-6.645-5.042-10.772-14.659-6.436-22.492"></path>
+        <path fill="#fff" d="M66.359 96.295h-4.226a.556.556 0 00-.517.417l-1.5 6.94-1.5 6.94a.554.554 0 01-.516.417h-2.991c-2.959 0-2.617-2.047-2.011-4.851l.018-.085.066-.354.012-.066.135-.72.145-.771.154-.785.682-3.332.683-3.332a.336.336 0 00-.341-.419h-4.337a.55.55 0 00-.514.418l-.933 4.424-.932 4.425-.002.006-.086.412c-1.074 4.903-.79 9.58 5.048 9.727l.17.003h9.163a.554.554 0 00.516-.417l1.976-9.289 1.976-9.29c.049-.23-.103-.417-.338-.418zm-45.256-.049h-4.64a.562.562 0 00-.521.416l-.44 1.942-.44 1.942c-.051.229.098.416.333.416h4.676a.556.556 0 00.518-.417l.425-1.941.425-1.941c.049-.229-.101-.417-.336-.417zm-1.346 6.044H15.08a.563.563 0 00-.521.416l-.657 2.91-.656 2.909-.183.834-.631 2.97-.63 2.971c-.049.229-.15.599-.225.821 0 0-.874 2.6-2.343 2.57l-.184-.004-1.271-.023h-.001a.558.558 0 00-.524.407l-.485 2.039-.484 2.038c-.055.228.093.416.326.42.833.01 2.699.031 3.828.031 3.669 0 5.604-2.033 6.843-7.883l1.451-6.714 1.361-6.297c.049-.227-.103-.415-.337-.415zm86.117-1.574l-.194-.801-.191-.82-.097-.414c-.38-1.477-1.495-2.328-3.917-2.328l-3.77-.004-3.472-.005h-3.907a.552.552 0 00-.515.417l-.173.816-.204.964-.057.271-1.759 8.24-1.67 7.822c-.05.23-.066.512-.038.626.028.115.479.209.713.209h3.524c.235 0 .532-.042.66-.094s.317-.513.364-.742l.626-3.099.627-3.1.001-.005.084-.413.76-3.56.671-3.144a.555.555 0 01.515-.417l11.089-.005c.235.002.383-.185.33-.414zm14.275-7.24l-.854.003h-3.549a.904.904 0 00-.667.353l-7.849 11.498c-.132.194-.283.166-.335-.062l-.578-2.533a.562.562 0 00-.522-.416h-5.045c-.235 0-.374.184-.31.409l2.261 7.921c.064.226.069.596.011.824l-.985 3.833c-.059.228.085.413.32.413h4.987a.58.58 0 00.532-.413l.986-3.833a2.52 2.52 0 01.363-.755l12.742-16.911c.142-.188.065-.341-.169-.339l-1.339.008zm-40.086 9.919v-.004a.514.514 0 01-.499.441h-6.397c-.222 0-.334-.15-.301-.336l.006-.015-.004.002.003-.021.029-.109c.611-1.624 1.855-2.69 4.194-2.69 2.634-.001 3.148 1.285 2.969 2.732zm-1.877-7.384c-8.211 0-10.157 4.984-11.249 10.015-1.091 5.128-.998 9.921 7.5 9.921h1.03l.256-.001h.06l1.02-.003h.018c2.244-.009 4.495-.026 5.406-.033a.553.553 0 00.509-.42l.344-1.681.067-.327.41-2.006a.335.335 0 00-.341-.418h-7.639c-3.039 0-3.941-.807-3.608-3.181H84.18l-.001.001.008-.001a.503.503 0 00.445-.315l.029-.106-.001.001c1.813-6.839 1.293-11.445-6.474-11.446zm-38.81 7.358l-.116.409v.001l-.922 3.268-.922 3.267a.596.596 0 01-.543.411h-4.88c-3.702 0-4.604-2.896-3.702-7.166.901-4.368 2.668-7.083 6.312-7.358 4.98-.376 5.976 3.126 4.773 7.168zm3.348 7.105s2.301-5.588 2.823-8.814c.713-4.319-1.45-10.585-9.804-10.585-8.306 0-11.914 5.981-13.29 12.484-1.376 6.55.427 12.293 8.686 12.246l6.516-.024 6.089-.022a.59.59 0 00.534-.414l1.061-4.046c.059-.228-.084-.414-.319-.416l-1.017-.006-1.017-.006c-.199-.001-.313-.131-.289-.302l.027-.095zm41.12-3.741a.28.28 0 11-.56.001.28.28 0 01.56-.001z"></path>
+    </svg>
+)
 
 
 export const projects = [
@@ -283,7 +311,7 @@ export const projects = [
         subTitle: 'Helixo innovations pvt ltd',
         content: 'Formarly a React app smoothly transitioned to a Shopify embedded app, then evolved into a custom Next.js template.Prisma optimized database operations, while Docker streamlined deployment.Hosted on DigitalOcean, the solution ensured scalability and robust infrastructure, meeting modern development standards.',
         link: 'https://apps.shopify.com/bucks-currency-converter',
-        tools: ['NextJs', 'Shopify', 'Prisma', 'MongoDB', 'Docker', 'DigitalOcean', 'GraphQL']
+        tools: ['NextJs', 'Shopify', 'Prisma', 'MongoDB', 'Docker', 'DigitalOcean', 'GraphQL', 'WebPack', 'Jquery', 'Cloud']
     },
     {
         id: 'project-ufe',
@@ -293,7 +321,7 @@ export const projects = [
         subTitle: 'Helixo innovations pvt ltd',
         content: "App that empowered Shopify merchants to generate an additional revenue of $100M. My contributions span both front-end and back-end development, where I crafted several components and developed multiple APIs, Implemented a standout feature enabling automatic free gift distribution, alongside a theme selector with preview functionality.",
         link: 'https://apps.shopify.com/upsell-funnel-engine-upsells',
-        tools: ['React', 'Shopify', 'Express', 'NodeJs', 'MongoDB', 'Docker', 'DigitalOcean', 'GraphQL']
+        tools: ['React', 'Shopify', 'Express', 'NodeJs', 'MongoDB', 'Docker', 'DigitalOcean', 'GraphQL', 'Redux']
     },
     {
         id: 'project-hue',
@@ -303,7 +331,7 @@ export const projects = [
         subTitle: 'Hue.Company',
         content: 'Developed official website for Hue Company using Next.js. The website is fully responsive and has a modern design. Implemented various features like contact form, blog section, and career page.',
         link: 'https://hue.company',
-        tools: ['NextJs', 'Vercel', 'TailwindCss']
+        tools: ['NextJs', 'Html', 'CSS', 'Vercel', 'Bootstrap',]
     },
     {
         id: 'projects-remix',
@@ -311,7 +339,7 @@ export const projects = [
         tag: 'Remix 💿',
         title: 'Custom Carrier Rates',
         subTitle: 'Personal Project',
-        content: 'Developed a custom carrier rates app for Shopify merchants. The app allows merchants to create custom shipping rates based on various conditions postal code. The app is built using Remix and Tailwind CSS. The app is hosted on Vercel.',
+        content: 'Developed a custom carrier rates app for Shopify merchants. The app allows merchants to create custom shipping rates based on various conditions postal code. The app is built using Remix and Polaris components library. The app is hosted on Vercel.',
         link: 'https://github.com/NavasMuhammed/custom-carrier-shopify-app',
         tools: ['Shopify', 'Remix', 'Vercel', "Prisma", 'Supabase', 'GraphQL']
     },

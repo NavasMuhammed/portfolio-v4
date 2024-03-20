@@ -1,6 +1,6 @@
 import Image from "next/image"; // Import the 'Image' component correctly.
 import { ReactNode } from "react";
-import { DefaultIcon, DigitalOceanIcon, DockerIcon, ExpressIcon, GearIcon, GitHubIcon, GraphqlIcon, HeroShape, InstagramIcon, LinkedinIcon, LocationIcon, LogoIcon, MongoDBIcon, MuiIcon, NextJsIcon, NodeJsIcon, PrismaIcon, ReactIcon, RemixIcon, ShopifyIcon, SuitCaseIcon, SupabaseIcon, TailwindIcon, TickIcon, TwitterIcon, VercelIcon, ViteIcon } from "./constants";
+import { BootStrapIcon, CloudFlareIcon, CssIcon, DefaultIcon, DigitalOceanIcon, DockerIcon, ExpressIcon, GearIcon, GitHubIcon, GraphqlIcon, HeroShape, HtmlIcon, InstagramIcon, JqueryIcon, LinkedinIcon, LocationIcon, LogoIcon, MongoDBIcon, MuiIcon, NextJsIcon, NodeJsIcon, PrismaIcon, ReactIcon, ReduxIcon, RemixIcon, ShopifyIcon, SuitCaseIcon, SupabaseIcon, TailwindIcon, TickIcon, TwitterIcon, VercelIcon, ViteIcon, WebPackIcon } from "./constants";
 
 /**
  * Renders a placeholder image with the specified dimensions.
@@ -61,6 +61,34 @@ interface SvgIconProvider {
 
 export const SvgIconProvider = ({ name, color = '', size = 24, onClick }: SvgIconProvider) => {
     switch (name) {
+        case 'Cloud':
+            return (
+                <CloudFlareIcon className="animate-popup cloud-svg" color={color} size={size} onClick={onClick} />
+            )
+        case 'Jquery':
+            return (
+                <JqueryIcon className="animate-popup jquery-svg" color={color} size={size} onClick={onClick} />
+            )
+        case 'WebPack':
+            return (
+                <WebPackIcon className="animate-popup webpack-svg" color={color} size={size} onClick={onClick} />
+            )
+        case 'CSS':
+            return (
+                <CssIcon className="animate-popup css-svg" color={color} size={size} onClick={onClick} />
+            )
+        case 'Bootstrap':
+            return (
+                <BootStrapIcon className="animate-popup bootstrap-svg" color={color} size={size} onClick={onClick} />
+            )
+        case 'Html':
+            return (
+                <HtmlIcon className="animate-popup html-svg" color={color} size={size} onClick={onClick} />
+            )
+        case 'Redux':
+            return (
+                <ReduxIcon className="animate-popup redux-svg" color={color} size={size} onClick={onClick} />
+            )
         case 'GraphQL':
             return (
                 <GraphqlIcon className="animate-popup graphql-svg" color={color} size={size} onClick={onClick} />
