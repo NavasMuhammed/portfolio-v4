@@ -636,3 +636,11 @@ svg.location-svg {
   width: 100%;
   height: 100%;
 }
+
+.social-icons:hover svg {
+  transition: all 0.25s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  scale: 1.1;
+  opacity: 1;
+
+}

@@ -7,6 +7,7 @@ export default function Index() {
       <MainLayout>
         <Home />
       </MainLayout>
+      <hr style={{ borderColor: 'transparent', margin: 50 }} />
     </main>
   )
 }
