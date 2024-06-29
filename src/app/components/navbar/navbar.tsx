@@ -17,15 +17,7 @@ const NavBar = () => {
         },
         {
             name: 'Contact',
-            link: '/'
-        },
-        {
-            name: 'Blog',
-            link: '/about'
-        },
-        {
-            name: 'Portfolio',
-            link: '/'
+            link: '/contact'
         },
     ]
     const handleRouteClick = (link: string) => {
