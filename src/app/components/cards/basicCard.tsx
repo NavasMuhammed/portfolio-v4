@@ -23,7 +23,7 @@ export const Card = ({ year, title, subTitle, content, id }: CardProps) => {
     });
     return (
         <div id={id} className='card-container flex flex-col gap-2 invisible'>
-            <div className="year-span">
+            <div style={{ display: `${year ? 'block' : 'none'}` }} className="year-span">
                 <span>{year?.start}</span>
                 <span> - </span>
                 <span>{year?.end}</span>

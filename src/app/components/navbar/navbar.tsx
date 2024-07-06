@@ -15,18 +15,10 @@ const NavBar = () => {
             name: 'About Me',
             link: '/about'
         },
-        {
-            name: 'Contact',
-            link: '/'
-        },
-        {
-            name: 'Blog',
-            link: '/about'
-        },
-        {
-            name: 'Portfolio',
-            link: '/'
-        },
+        // {
+        //     name: 'Contact',
+        //     link: '/contact'
+        // },
     ]
     const handleRouteClick = (link: string) => {
         router.push(link)
