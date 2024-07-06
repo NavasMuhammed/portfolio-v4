@@ -15,10 +15,10 @@ const NavBar = () => {
             name: 'About Me',
             link: '/about'
         },
-        {
-            name: 'Contact',
-            link: '/contact'
-        },
+        // {
+        //     name: 'Contact',
+        //     link: '/contact'
+        // },
     ]
     const handleRouteClick = (link: string) => {
         router.push(link)

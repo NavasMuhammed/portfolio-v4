@@ -3,7 +3,13 @@ import { Card } from './cards/basicCard'
 
 const experience = [
     {
-        year: { start: '2023', end: 'Present' },
+        year: { start: '2024', end: 'Present' },
+        title: 'Shopify | Full Stack Developer',
+        subTitle: 'Threasury Media',
+        content: 'Developing high quality shopify apps and merchants solutions. Working on multiple headless shopify projects and on mission to revolutionize the online advertisement using tech.'
+    },
+    {
+        year: { start: '2023', end: '2024' },
         title: 'Full Stack | Shopify Developer',
         subTitle: 'Helixo innovations pvt ltd',
         content: 'Joined as a full stack developer and later moved to Shopify development team. Worked on multiple projects and developed custom apps for shopify stores. Also worked on multiple headless shopify projects.'

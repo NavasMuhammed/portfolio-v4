@@ -13,7 +13,7 @@ const Home = () => {
     return (
         <section className='home-container'>
             <div className="banner-container flex gap-16 justify-between max-[600px]:flex-col">
-                <PorfileCard name='Muhammed Navas' work='FullStack dev at Helixo' loc='Lives in Kochi,India' />
+                <PorfileCard name='Muhammed Navas' work='Shopify | Full stack Dev' loc='Lives in Kochi,India' />
                 <div className='hero-banner-container flex gap-7 flex-wrap lg:flex-col '>
                     <HeroBanner />
                     <SwitchComponent

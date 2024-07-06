@@ -11,16 +11,18 @@ const About = () => {
     const content = 'Your website is an extension of your brand, and I&apos;m here to help you make it the best it can be. I specialize in creating custom websites that are tailored to your unique needs. Whether you need a simple landing page or a complex e-commerce site, I can help you bring your vision to life. With my expertise in web development, I can create a website that is not only visually stunning but also functional and user-friendly. Let me help you take your online presence to the next level.'
     return (
         <MainLayout>
-            <div className='flex flex-col p-4 sm:flex-row '>
+            {/* <div className='flex flex-col p-4 sm:flex-row '>
                 <Card content={content} id='aboutMe' title='I Bring Your Website With Vision To Life' />
-            </div>
+                </div> */}
             <SwitchComponent
                 Headder='Education And Experience'
                 title='Your website is an extension of your brand, and I&apos;m here to help you make it the'
                 actionMarkup={<Switch left='Experience' right='Education' />}
                 body={<SwitchBody target='switch' body={<Experience />} switchBody={<Education />} />}
             />
-            <SkillCard />
+            {/* <div className='flex flex-col p-4 sm:flex-row '>
+                <SkillCard />
+            </div> */}
         </MainLayout>
     )
 }
