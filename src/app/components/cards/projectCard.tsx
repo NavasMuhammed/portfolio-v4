@@ -8,11 +8,11 @@ interface CardProps {
     content?: string;
     id?: string;
     tag?: string;
-    hanldeClick?: () => void;
+    handleClick?: () => void;
     tools: string[];
 }
 
-export const ProjectCard = ({ name, title, subTitle, content, id, tag, hanldeClick, tools }: CardProps) => {
+export const ProjectCard = ({ name, title, subTitle, content, id, tag, handleClick, tools }: CardProps) => {
     useIntersectionObserver({
         elementSelector: `#${id}.card-container`,
         classes: {
@@ -26,7 +26,7 @@ export const ProjectCard = ({ name, title, subTitle, content, id, tag, hanldeCli
 
 
     return (
-        <div onClick={hanldeClick} id={id} className='card-container flex flex-col gap-2 invisible relative'>
+        <div onClick={handleClick} id={id} className='card-container flex flex-col gap-2 invisible relative'>
             {tag ? < div className="ribbon ">{tag}</div> : null}
             <div className="project-image-container">
                 <ImageProvider x={600} name={`${name}`} className='project-image rounded-xl' />

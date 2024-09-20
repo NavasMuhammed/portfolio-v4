@@ -28,7 +28,7 @@ export const ImageProvider = ({ name, x, y = x, className, imgStyles }: Placehol
     );
 }
 
-interface ButtonProdiverProps {
+interface ButtonProviderProps {
     title?: string;
     icon?: ReactNode;
     className?: string;
@@ -37,7 +37,7 @@ interface ButtonProdiverProps {
 
 const iconPlaceHolder = <div>🔗</div>
 
-export const ButtonProdiver = ({ title = "button", icon = iconPlaceHolder, className = '', link = "" }: ButtonProdiverProps) => {
+export const ButtonProvider = ({ title = "button", icon = iconPlaceHolder, className = '', link = "" }: ButtonProviderProps) => {
     const handleClick = () => {
         if (link !== "") {
             window.open(link, '_blank')

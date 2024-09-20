@@ -15,15 +15,16 @@ const SettingsPanel = (props: Props) => {
         {
             name: 'About Me',
             link: '/about'
-        },
-        {
-            name: 'Contact',
-            link: '/'
-        },
-        {
-            name: 'Blog',
-            link: '/about'
-        },
+        }
+        // ,
+        // {
+        //     name: 'Contact',
+        //     link: '/'
+        // },
+        // {
+        //     name: 'Blog',
+        //     link: '/about'
+        // },
     ]
     const handleRouteClick = (link: string) => {
         router.push(link)
