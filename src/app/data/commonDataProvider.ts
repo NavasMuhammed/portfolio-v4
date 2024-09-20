@@ -1,44 +1,44 @@
 export const progressDataProvider = [
     {
-        title: 'JavaScript',
+        title: 'JavaScript / TypeScript',
         duration: 2000,
         progress: 80,
         classNameProgress: 'yellow-gradient'
     },
     {
-        title: 'NodeJs',
+        title: 'Shopify / Liquid',
         duration: 2000,
         progress: 75,
         classNameProgress: 'purple-gradient'
     },
     {
-        title: 'HTML',
+        title: 'NodeJs / ExpressJs',
         duration: 2000,
-        progress: 100,
+        progress: 75,
         classNameProgress: 'orange-gradient'
     },
     {
-        title: 'CSS',
+        title: 'Remix / NextJs / ReactJs',
         duration: 2000,
-        progress: 100,
+        progress: 85,
         classNameProgress: 'blue-gradient'
     },
     {
-        title: 'MongoDB',
+        title: 'MongoDB / PostgreSQL',
         duration: 2000,
         progress: 70,
         classNameProgress: 'dark-green-gradient'
     },
     {
-        title: 'React',
+        title: 'Docker / Digital Ocean',
         duration: 2000,
-        progress: 80,
+        progress: 65,
         classNameProgress: 'dark-gradient-purple'
     },
     {
-        title: 'ExpressJs',
+        title: 'HTML / CSS',
         duration: 2000,
-        progress: 75,
+        progress: 95,
         classNameProgress: 'dark-pink-gradient'
     }
 ];

@@ -644,3 +644,32 @@ svg.location-svg {
   opacity: 1;
 
 }
+
+.hover-item {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.hover-item::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--foreground-color);
+  /* Change this to match your desired underline color */
+  transition: width 0.3s ease-in-out;
+}
+
+.hover-item:hover::after,
+.hover-item.active-route::after {
+  width: 100%;
+}
+
+/* Optional: different color for active route */
+.hover-item.active-route::after {
+  background-color: var(--accent-color)
+    /* Change this to your preferred active color */
+}

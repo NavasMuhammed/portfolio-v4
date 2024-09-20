@@ -1,12 +1,12 @@
 'use client'
-import { ButtonProdiver, ImageProvider, PlaceholderImage, SvgIconProvider } from '@utils/helper'
-interface PorfileCardProps {
+import { ButtonProvider, ImageProvider, PlaceholderImage, SvgIconProvider } from '@utils/helper'
+interface ProfileCardProps {
     name?: string;
     work?: string;
     loc?: string;
 }
 
-const PorfileCard = ({ name = "Name Here ", work = 'Theme Designer at Envato', loc = "Lives in New York, USA" }: PorfileCardProps) => {
+const ProfileCard = ({ name = "Name Here ", work = 'Theme Designer at Envato', loc = "Lives in New York, USA" }: ProfileCardProps) => {
     const icons = [
         {
             link: 'https://github.com/NavasMuhammed',
@@ -55,9 +55,9 @@ const PorfileCard = ({ name = "Name Here ", work = 'Theme Designer at Envato', l
                     </div>
                 </div>
             </div>
-            {/* <ButtonProdiver title='Follow' className='self-center ml-auto fancy-hover w-full rounded-3xl p-5' /> */}
+            {/* <ButtonProvider title='Follow' className='self-center ml-auto fancy-hover w-full rounded-3xl p-5' /> */}
         </div>
     )
 }
 
-export default PorfileCard
+export default ProfileCard

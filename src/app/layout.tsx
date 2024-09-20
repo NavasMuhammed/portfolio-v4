@@ -20,7 +20,7 @@ export default function RootLayout({
       <Head>
         <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
-        <title>Hue.Company</title>
+        <title>Portfolio | Navas Muhammed</title>
       </Head>
       <body className={inter.className}>{children}</body>
     </html>

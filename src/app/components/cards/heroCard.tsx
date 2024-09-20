@@ -1,6 +1,6 @@
 'use client'
 import { useIntersectionObserver } from '@/app/hooks/intersectionObserver';
-import { ButtonProdiver, SvgIconProvider } from '@/app/utils/helper';
+import { ButtonProvider, SvgIconProvider } from '@/app/utils/helper';
 
 interface HeroCardProps {
     name?: string;
@@ -12,7 +12,7 @@ interface HeroHighlights {
     year: number;
     description: string;
 }
-const higilights: HeroHighlights[] = [
+const highlights: HeroHighlights[] = [
     {
         year: 2,
         description: 'YEARS EXPERIENCE'
@@ -27,7 +27,7 @@ const higilights: HeroHighlights[] = [
     },
 ];
 const paraPlaceHolder = "Specializing in engaging user experiences for startups, I leverage full-stack and Shopify app development to connect unique identities with audiences for impactful growth."
-const HeroCard = ({ name = 'Name', work = 'Webflow Designer', para = paraPlaceHolder, hero = true }: HeroCardProps) => {
+const HeroCard = ({ name = 'Name', work = 'Webfoot Designer', para = paraPlaceHolder, hero = true }: HeroCardProps) => {
 
     useIntersectionObserver({
         elementSelector: '.hero-card-container',
@@ -48,8 +48,8 @@ const HeroCard = ({ name = 'Name', work = 'Webflow Designer', para = paraPlaceHo
             </h2>
             <p className='font-medium'>{para}</p>
             <hr className='hr-style my-8' />
-            {hero && <div className="flex-wrap lg:flex-nowrap  flex  gap-3 hero-higilights">
-                {higilights.map((item, index) => {
+            {hero && <div className="flex-wrap lg:flex-nowrap  flex  gap-3 hero-highlights">
+                {highlights.map((item, index) => {
                     return <div key={index} className="engagements-num">
                         <div className='flex gap-3 items-center mb-3'>
                             <SvgIconProvider name='tickShape' size={20} />
@@ -59,7 +59,7 @@ const HeroCard = ({ name = 'Name', work = 'Webflow Designer', para = paraPlaceHo
                     </div>
                 }
                 )}
-                <ButtonProdiver link='https://www.canva.com/design/DAE4gakUnqs/VgJBFKzuM05-ySZIepAy4w/edit?utm_content=DAE4gakUnqs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton' title='Resume' className='ml-auto w-max fancy-hover px-3.5 py-3 h-fit rounded-xl sm:mr-0' />
+                <ButtonProvider link='https://drive.google.com/file/d/11uhB9fXiVCZuVbuLm3TKassnrePgQx-b/view?usp=sharing' title='Resume' className='ml-auto w-max fancy-hover px-3.5 py-3 h-fit rounded-xl sm:mr-0' />
             </div>}
         </div >
     )
