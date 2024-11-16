@@ -1,6 +1,6 @@
 import Image from "next/image"; // Import the 'Image' component correctly.
 import { ReactNode } from "react";
-import { BootStrapIcon, CloudFlareIcon, CssIcon, DefaultIcon, DigitalOceanIcon, DockerIcon, ExpressIcon, GearIcon, GitHubIcon, GraphqlIcon, HeroShape, HtmlIcon, InstagramIcon, JqueryIcon, LinkedinIcon, LocationIcon, LogoIcon, MongoDBIcon, MuiIcon, NextJsIcon, NodeJsIcon, PrismaIcon, ReactIcon, ReduxIcon, RemixIcon, ShopifyIcon, SuitCaseIcon, SupabaseIcon, TailwindIcon, TickIcon, TwitterIcon, VercelIcon, ViteIcon, WebPackIcon } from "./constants";
+import { BootStrapIcon, CloudFlareIcon, CssIcon, DefaultIcon, DigitalOceanIcon, DockerIcon, ExpressIcon, FacebookIcon, GearIcon, GitHubIcon, GraphqlIcon, HeroShape, HtmlIcon, InstagramIcon, JqueryIcon, LinkedinIcon, LocationIcon, LogoIcon, MongoDBIcon, MuiIcon, NextJsIcon, NodeJsIcon, PapertailIcon, PrismaIcon, ReactIcon, ReduxIcon, RemixIcon, ShopifyIcon, SnapchatIcon, SuitCaseIcon, SupabaseIcon, TailwindIcon, TickIcon, TiktokIcon, TwitterIcon, VercelIcon, ViteIcon, WebPackIcon } from "./constants";
 
 /**
  * Renders a placeholder image with the specified dimensions.
@@ -197,7 +197,22 @@ export const SvgIconProvider = ({ name, color = '', size = 24, onClick }: SvgIco
             return (
                 <TwitterIcon className="twitter-svg" color={color} size={size} onClick={onClick} />
             )
-
+        case 'Facebook':
+            return (
+                <FacebookIcon className="facebook-svg" color={color} size={size} onClick={onClick} />
+            )
+        case 'Snapchat':
+            return (
+                <SnapchatIcon className="snapchat-svg" color={color} size={size} onClick={onClick} />
+            )
+        case 'Tiktok':
+            return (
+                <TiktokIcon className="tiktok-svg" color={color} size={size} onClick={onClick} />
+            )
+        case 'PaperTail':
+            return (
+                <PapertailIcon className="paperTail-svg" color={color} size={size} onClick={onClick} />
+            )
         default:
             return (
                 <DefaultIcon color={color} size={size} onClick={onClick} />
