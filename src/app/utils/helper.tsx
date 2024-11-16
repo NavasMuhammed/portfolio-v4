@@ -1,6 +1,6 @@
 import Image from "next/image"; // Import the 'Image' component correctly.
 import { ReactNode } from "react";
-import { BootStrapIcon, CloudFlareIcon, CssIcon, DefaultIcon, DigitalOceanIcon, DockerIcon, ExpressIcon, FacebookIcon, GearIcon, GitHubIcon, GraphqlIcon, HeroShape, HtmlIcon, InstagramIcon, JqueryIcon, LinkedinIcon, LocationIcon, LogoIcon, MongoDBIcon, MuiIcon, NextJsIcon, NodeJsIcon, PapertailIcon, PrismaIcon, ReactIcon, ReduxIcon, RemixIcon, ShopifyIcon, SnapchatIcon, SuitCaseIcon, SupabaseIcon, TailwindIcon, TickIcon, TiktokIcon, TwitterIcon, VercelIcon, ViteIcon, WebPackIcon } from "./constants";
+import { BootStrapIcon, CloudFlareIcon, CssIcon, DefaultIcon, DigitalOceanIcon, DockerIcon, ExpressIcon, FacebookIcon, GearIcon, GitHubIcon, GraphqlIcon, HeroShape, HtmlIcon, InstagramIcon, JqueryIcon, LinkedinIcon, LocationIcon, LogoIcon, MongoDBIcon, MuiIcon, NextJsIcon, NodeJsIcon, PapertailIcon, PrismaIcon, ReactIcon, ReduxIcon, RemixIcon, ShopifyIcon, ShopifyLiquidIcon, SnapchatIcon, SuitCaseIcon, SupabaseIcon, TailwindIcon, TickIcon, TiktokIcon, TwitterIcon, VercelIcon, ViteIcon, WebPackIcon } from "./constants";
 
 /**
  * Renders a placeholder image with the specified dimensions.
@@ -212,6 +212,10 @@ export const SvgIconProvider = ({ name, color = '', size = 24, onClick }: SvgIco
         case 'PaperTail':
             return (
                 <PapertailIcon className="paperTail-svg" color={color} size={size} onClick={onClick} />
+            )
+        case 'ShopifyLiquid':
+            return (
+                <ShopifyLiquidIcon className="shopifyLiquid-svg" color={color} size={size} onClick={onClick} />
             )
         default:
             return (
