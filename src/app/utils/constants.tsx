@@ -391,7 +391,7 @@ export const projects = [
         subTitle: "Joola Sports",
         content: "Joola, a leading sporting goods company founded in Germany in 1952, specializes in table tennis and pickleball equipment. It has sponsored major tournaments like the Olympics and US Open. The Joola India Shopify Plus store ensures a seamless shopping experience with Razorpay for payments, Shiprocket for shipping, and Matrixify for data migration. Built with Shopify Liquid, it features custom theme development, PageFly, and Gem Page Builder for a flexible, user-friendly design.",
         link: "https://joola.in/",
-        tools: ["Html", "CSS", "GraphQL", "ShopifyLiquid", "Jquery", "Shopify"]
+        tools: ["Html", "CSS", "GraphQL", "Shopify", "ShopifyLiquid", "Jquery",]
     }
 
     ,
