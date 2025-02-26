@@ -365,7 +365,7 @@ export const projects = [
     {
         id: 'project-pixel',
         name: 'parkour-pixel',
-        tag: '💎 Buit for Shopify',
+        tag: '💎 Built for Shopify',
         title: 'Parkour Pixel',
         subTitle: 'Threasury Media',
         content: 'Parkour Pixel, a complete solution for Shopify store pixel tracking, supports multi-pixel integration for Facebook, Snapchat, and TikTok, including Conversion API and browser-based tracking. Built with Remix, it uses Prisma for efficient database handling, React Hook Form for streamlined input, and TypeScript for robust code. The backend, powered by Express and WebSocket, ensures real-time updates. Deployed on DigitalOcean with Cloudflare Edge Cache and monitored via Papertrail, it delivers scalability and high performance.',
@@ -398,7 +398,7 @@ export const projects = [
     {
         id: 'project-bucks',
         name: 'bucks',
-        tag: '💎 Buit for Shopify',
+        tag: '💎 Built for Shopify',
         title: 'Bucks Currency converter',
         subTitle: 'Helixo innovations pvt ltd',
         content: 'Formarly a React app smoothly transitioned to a Shopify embedded app, then evolved into a custom Next.js template.Prisma optimized database operations, while Docker streamlined deployment.Hosted on DigitalOcean, the solution ensured scalability and robust infrastructure, meeting modern development standards.',
