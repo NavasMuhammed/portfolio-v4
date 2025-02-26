@@ -303,7 +303,7 @@ export const JqueryIcon = ({ size, color, onClick, className }: svgIconProps) =>
 export const FacebookIcon = ({ size, color, onClick, className }: svgIconProps) => (
     <svg className={`${className}`} width={`${size}`} height={`${size}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="facebook">
         <path fill="#1976D2" d="M14 0H2C.897 0 0 .897 0 2v12c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V2c0-1.103-.897-2-2-2z"></path>
-        <path fill="#FAFAFA" fill-rule="evenodd" d="M13.5 8H11V6c0-.552.448-.5 1-.5h1V3h-2a3 3 0 0 0-3 3v2H6v2.5h2V16h3v-5.5h1.5l1-2.5z" clip-rule="evenodd"></path>
+        <path fill="#FAFAFA" fillRule="evenodd" d="M13.5 8H11V6c0-.552.448-.5 1-.5h1V3h-2a3 3 0 0 0-3 3v2H6v2.5h2V16h3v-5.5h1.5l1-2.5z" clipRule="evenodd"></path>
     </svg>
 )
 
@@ -319,17 +319,17 @@ export const TiktokIcon = ({ size, color, onClick, className }: svgIconProps) =>
     <svg className={`${className}`} width={`${size}`} height={`${size}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61.94 62.08" id="tiktok">
         <defs>
             <radialGradient id="a" cx="34.83" cy="-27.77" r="54.67" gradientUnits="userSpaceOnUse">
-                <stop offset="0" stop-color="#1f1f1f"></stop>
-                <stop offset=".44" stop-color="#232222"></stop>
-                <stop offset=".82" stop-color="#2d2b2b"></stop>
-                <stop offset="1" stop-color="#353132"></stop>
+                <stop offset="0" stopColor="#1f1f1f"></stop>
+                <stop offset=".44" stopColor="#232222"></stop>
+                <stop offset=".82" stopColor="#2d2b2b"></stop>
+                <stop offset="1" stopColor="#353132"></stop>
             </radialGradient>
             <linearGradient id="b" x1="30.97" x2="30.97" y1="47.69" y2="14.25" gradientUnits="userSpaceOnUse">
-                <stop offset="0" stop-color="#d1d3d4"></stop>
-                <stop offset=".15" stop-color="#dee0e1"></stop>
-                <stop offset=".41" stop-color="#f1f1f2"></stop>
-                <stop offset=".69" stop-color="#fbfcfc"></stop>
-                <stop offset="1" stop-color="#fff"></stop>
+                <stop offset="0" stopColor="#d1d3d4"></stop>
+                <stop offset=".15" stopColor="#dee0e1"></stop>
+                <stop offset=".41" stopColor="#f1f1f2"></stop>
+                <stop offset=".69" stopColor="#fbfcfc"></stop>
+                <stop offset="1" stopColor="#fff"></stop>
             </linearGradient>
         </defs>
         <rect width="61.94" height="61.94" fill="black" rx="16.96"></rect>
