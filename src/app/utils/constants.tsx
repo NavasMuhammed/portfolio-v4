@@ -376,10 +376,10 @@ export const projects = [
         id: 'project-lively-ugc',
         name: 'lively',
         tag: '# Video Commerce',
-        title: 'Lively Shoppable Videos',
-        subTitle: 'Lively.li',
+        title: 'Vudio AI (formerly Lively UGC)',
+        subTitle: 'Vudio.Ai',
         content: 'Initially a React app, the project transitioned into a Shopify app powered by Node.js and Express, seamlessly handling Shopify authentication and directing merchants to Lively\'s shoppable video CMS. Multiple Shopify app blocks were developed, ensuring compatibility with all themes and direct integration with the Lively CMS.',
-        link: 'https://apps.shopify.com/lively-shoppable-feeds',
+        link: 'https://apps.shopify.com/vudio-reels-ai-catalogs',
         tools: ['NodeJs', 'Express', 'Shopify', 'MongoDB', 'Docker', 'GraphQL', 'ShopifyLiquid']
     },
 
