@@ -360,11 +360,12 @@ export const ShopifyLiquidIcon = ({ size, color, onClick, className }: svgIconPr
 
 
 
+
 export const projects = [
     {
         id: 'project-pixel',
         name: 'parkour-pixel',
-        tag: '# New',
+        tag: '💎 Buit for Shopify',
         title: 'Parkour Pixel',
         subTitle: 'Threasury Media',
         content: 'Parkour Pixel, a complete solution for Shopify store pixel tracking, supports multi-pixel integration for Facebook, Snapchat, and TikTok, including Conversion API and browser-based tracking. Built with Remix, it uses Prisma for efficient database handling, React Hook Form for streamlined input, and TypeScript for robust code. The backend, powered by Express and WebSocket, ensures real-time updates. Deployed on DigitalOcean with Cloudflare Edge Cache and monitored via Papertrail, it delivers scalability and high performance.',
@@ -381,10 +382,23 @@ export const projects = [
         link: 'https://apps.shopify.com/lively-shoppable-feeds',
         tools: ['NodeJs', 'Express', 'Shopify', 'MongoDB', 'Docker', 'GraphQL', 'ShopifyLiquid']
     },
+
+    {
+        id: "project-joola",
+        name: "joola-india",
+        tag: "Shopify Plus",
+        title: "Joola India Store",
+        subTitle: "Joola Sports",
+        content: "Joola, a leading sporting goods company founded in Germany in 1952, specializes in table tennis and pickleball equipment. It has sponsored major tournaments like the Olympics and US Open. The Joola India Shopify Plus store ensures a seamless shopping experience with Razorpay for payments, Shiprocket for shipping, and Matrixify for data migration. Built with Shopify Liquid, it features custom theme development, PageFly, and Gem Page Builder for a flexible, user-friendly design.",
+        link: "https://joola.in/",
+        tools: ["Html", "CSS", "GraphQL", "ShopifyLiquid", "Jquery", "Shopify"]
+    }
+
+    ,
     {
         id: 'project-bucks',
         name: 'bucks',
-        tag: '#1 at shopify',
+        tag: '💎 Buit for Shopify',
         title: 'Bucks Currency converter',
         subTitle: 'Helixo innovations pvt ltd',
         content: 'Formarly a React app smoothly transitioned to a Shopify embedded app, then evolved into a custom Next.js template.Prisma optimized database operations, while Docker streamlined deployment.Hosted on DigitalOcean, the solution ensured scalability and robust infrastructure, meeting modern development standards.',
